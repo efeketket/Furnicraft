@@ -53,12 +53,12 @@ execute at @e[nbt={Inventory:[{id:"minecraft:barrier",tag:{CustomModelData:3,dis
 
 #page up page down
 execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.0 with arrow{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}} 1
-execute at @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] run scoreboard players remove @e[tag=1,limit=1] page 1
+execute at @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] run scoreboard players remove @e[tag=1,limit=1,sort=nearest] page 1
 execute as @e[tag=1] at @e run playsound minecraft:block.note_block.hat ambient @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] ~ ~ ~ 1 1
 execute as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] as @s run clear @s arrow{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}} 1
 execute as @e[tag=1] at @e run playsound minecraft:block.note_block.hat ambient @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] ~ ~ ~ 1 1
 execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.8 with arrow{display :{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}} 1
-execute at @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]},distance=..4] as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] run scoreboard players add @e[tag=1,limit=1] page 1
+execute at @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] run scoreboard players add @e[tag=1,limit=1,sort=nearest] page 1
 execute as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] as @s run clear @s arrow{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}} 1
 
 
