@@ -22,6 +22,8 @@ scoreboard players enable @a playtimeshow
 execute as @a[scores={playtimeshow=1..}] at @s run execute as @s at @s run function kel:playtime/playtimeshow
 execute as @a[scores={playtimeshow=1..}] at @s run execute as @s run scoreboard players set @a playtimeshow 0
 
+#shippingbin trigger
+
 
 #scoreboard players enable @a bookshopb
 #execute as @a[scores={bookshop=1}] at @s as @s run execute as @s at @s run function kel:bookshop/sugarcane
