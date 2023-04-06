@@ -46,6 +46,15 @@ execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ contain
 execute as @p[nbt={Inventory:[{id:"minecraft:salmon",tag:{display:{Name:'{"text":"Somon Balığı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/salmon
 execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.25 with cod{display:{Name:'{"text":"Morina Balığı","bold":true,"italic":false}'}} 64
 execute as @p[nbt={Inventory:[{id:"minecraft:cod",tag:{display:{Name:'{"text":"Morina Balığı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/cod
+#
+execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.15 with leather{display:{Name:'{"text":"Deri","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:leather",tag:{display:{Name:'{"text":"Deri","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/leather
+execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.16 with feather{display:{Name:'{"text":"Tüy","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:feather",tag:{display:{Name:'{"text":"Tüy","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/feather
+execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.14 with white_wool{display:{Name:'{"text":"Yün","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:white_wool",tag:{display:{Name:'{"text":"Yün","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/wool
+
+
 #/farming page 2
 
 #gui design
