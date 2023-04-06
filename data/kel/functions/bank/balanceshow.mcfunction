@@ -1,0 +1,1 @@
+execute as @s run scoreboard objectives setdisplay sidebar balance
