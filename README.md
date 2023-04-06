@@ -1,4 +1,4 @@
-# Kel Data Pack
+# Kel Data Pack v0.1
 This datapack adds many new features to your game, including:
 
 * New İtems: 
