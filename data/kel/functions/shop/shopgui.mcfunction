@@ -114,7 +114,53 @@ execute as @p[nbt={Inventory:[{id:"minecraft:ghast_tear",tag:{display:{Name:'{"t
 #drop item page 4
 
 #drop item page 5
-#execute at @e[tag=1,scores={page=5}] as @e[tag=1] run function kel:shop/itemdetector
+execute at @e[tag=1,scores={page=5}] as @p run function kel:shop/empty_check
+#farming drop sell
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Slot:13b}]} run function kel:shop/products/farming/bamboo
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Slot:13b}]} run function kel:shop/products/farming/beef
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beetroot",Slot:13b}]} run function kel:shop/products/farming/beetroot
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:cactus",Slot:13b}]} run function kel:shop/products/farming/cactus
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:carrot",Slot:13b}]} run function kel:shop/products/farming/carrot
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:chicken",Slot:13b}]} run function kel:shop/products/farming/chicken
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:cod",Slot:13b}]} run function kel:shop/products/farming/cod
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:feather",Slot:13b}]} run function kel:shopproducts/farming/feather
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:glow_berries",Slot:13b}]} run function kel:shop/products/farming/glow_berries
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:leather",Slot:13b}]} run function kel:shop/products/farming/feather
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:melon",Slot:13b}]} run function kel:shop/products/farming/melon
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:mutton",Slot:13b}]} run function kel:shop/products/farming/mutton
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:porkchop",Slot:13b}]} run function kel:shop/products/farming/porkchop
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:potato",Slot:13b}]} run function kel:shop/products/farming/potato
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:pumpkin",Slot:13b}]} run function kel:shop/products/farming/pumpkin
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:rabbit",Slot:13b}]} run function kel:shop/products/farming/rabbit
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:salmon",Slot:13b}]} run function kel:shop/products/farming/salmon
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:sugar_cane",Slot:13b}]} run function kel:shop/products/farming/sugarcane
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:sweet_berries",Slot:13b}]} run function kel:shop/products/farming/sweet_berries
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:wheat",Slot:13b}]} run function kel:shop/products/farming/wheat
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:white_wool",Slot:13b}]} run function kel:shop/products/farming/wool
+#mining drop sell
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:amethyst_shard",Slot:13b}]} run function kel:shop/products/mining/amethyst
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:ancient_debris",Slot:13b}]} run function kel:shop/products/mining/ancient_debris
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:arrow",Slot:13b}]} run function kel:shop/products/mining/arrow
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:blaze_rod",Slot:13b}]} run function kel:shop/products/mining/blaze_rod
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bone",Slot:13b}]} run function kel:shop/products/mining/bone
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:coal",Slot:13b}]} run function kel:shop/products/mining/coal
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:copper_ingot",Slot:13b}]} run function kel:shop/products/mining/copper
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:diamond",Slot:13b}]} run function kel:shop/products/mining/diamond
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:emerald",Slot:13b}]} run function kel:shop/products/mining/emerald
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:ender_pearl",Slot:13b}]} run function kel:shop/products/mining/ender_pearl
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:ghast_tear",Slot:13b}]} run function kel:shop/products/mining/ghast_tear
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:glass_bottle",Slot:13b}]} run function kel:shop/products/mining/glass_bottle
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:gold_ingot",Slot:13b}]} run function kel:shop/products/mining/gold
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:iron_ingot",Slot:13b}]} run function kel:shop/products/mining/iron
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:gunpowder",Slot:13b}]} run function kel:shop/products/mining/gunpowder
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:magma_cream",Slot:13b}]} run function kel:shop/products/mining/magma_cream
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:nether_wart",Slot:13b}]} run function kel:shop/products/mining/nether_wart
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:slime_ball",Slot:13b}]} run function kel:shop/products/mining/slime_ball
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:rotten_flesh",Slot:13b}]} run function kel:shop/products/mining/rotten_flesh
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:spider_eye",Slot:13b}]} run function kel:shop/products/mining/spider_eye
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:string",Slot:13b}]} run function kel:shop/products/mining/string
+
+
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.0 with barrier
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.1 with barrier
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.2 with barrier
@@ -127,21 +173,7 @@ execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ 
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.10 with barrier
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.11 with barrier
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.12 with barrier
-
-#still working on page 5 
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace block ~ ~1 ~ container.9 from entity @p inventory.0 
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace block ~ ~1 ~ container.12 from entity @p inventory.0
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace entity @p inventory.0 from block ~ ~1 ~ container.13
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace block ~ ~1 ~ container.13 from block ~ ~1 ~ container.12
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace entity @p inventory.0 from block ~ ~1 ~ container.13
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run function kel:shop/products/farming/bamboo
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace block ~ ~1 ~ container.13 with air
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Count: 64b}]} run function kel:shop/products/farming/beef
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Count: 32b}]} run function kel:shop/products/farming/beef
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Count: 32b}]} run item replace block ~ ~1 ~ container.13 with air
-#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Count: 64b}]} run item replace block ~ ~1 ~ container.13 with beef 32
-
-#execute as @e[tag=1,scores={page=5}] at @e[tag=1] run item replace block ~ ~1 ~ container.13 with air 
+execute as @e[tag=1,scores={page=5}] at @e[tag=1] run item replace block ~ ~1 ~ container.13 with air 
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.14 with barrier
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.15 with barrier
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.16 with barrier
@@ -155,6 +187,8 @@ execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ 
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.24 with barrier
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.25 with barrier
 execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.27 with barrier
+
+
 #execute as @p[nbt={Inventory:[{Slot: 5b, id:"minecraft:nether_wart",Count: 1b}]}] run say hi
 
 #drop item page 6
