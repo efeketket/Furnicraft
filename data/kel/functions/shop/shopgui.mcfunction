@@ -9,24 +9,21 @@ execute as @a[nbt={Inventory:[{id:"minecraft:knowledge_book"}]}] run give @s[nbt
 execute as @a[nbt={Inventory:[{id:"minecraft:knowledge_book"}]}] run clear @s minecraft:knowledge_book 1
 execute at @e[type=minecraft:bat,name="Satış Kutusu"] run execute as @p run function kel:shop/placeshop
 execute at @e[type=minecraft:bat,name="Satış Kutusu"] run kill @e[type=minecraft:bat,name="Satış Kutusu"]
-#execute as @e[tag=1] at @e run clear @a itemdatası{display:{Name:'{"text":"itemdispname","bold":true,"italic":false}'}} itemcount
-#execute as @s store result score @s item_count run clear @s minecraft:itemdatası 0
-#execute as @s[scores={item_count=itemcount..}] run scoreboard players set @s selling 1
-#execute as @s[scores={selling=1}] run scoreboard players add @s balance 1
-#execute as @s[scores={selling=1}] run clear @s minecraft:itemdatası itemcount
-#execute as @s[scores={selling=1}] run tellraw @s ["",{"text":"itemcountx","bold":true,"color":"gold"},{"text":" itemdispname başarıyla satıldı!","color":"yellow"}]
-#execute as @s[scores={selling=1}] run execute as @s at @s run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1
-#execute as @s[scores={selling=0}] run tellraw @s {"text":"Yetersiz Eşya!","bold":true,"color":"dark_red"}
-#execute as @s[scores={selling=0}] run execute as @s at @s run playsound minecraft:entity.villager.no ambient @s ~ ~ ~ 1 1
-#execute as @s run scoreboard players set @s item_count 0
-#execute as @s run scoreboard players set @s selling 0
 
-#itemdispname
-#itemdatası
-#itemcount
-#
+#shop gui design
+execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}
+execute at @e[tag=1,scores={page=2}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 2","bold":true,"italic":false}'}}
+execute at @e[tag=1,scores={page=5}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}
+execute at @e[tag=1,scores={page=5}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}
+execute at @e[tag=1,scores={page=5}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:5,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}
+execute at @e[tag=1,scores={page=6}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}
+execute at @e[tag=1,scores={page=7}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}
+execute at @e[nbt={Inventory:[{id:"minecraft:barrier",tag:{CustomModelData:5,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}}]}] run clear @p barrier{CustomModelData:5,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}} 1
+execute at @e[nbt={Inventory:[{id:"minecraft:barrier",tag:{CustomModelData:4,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}}]}] run clear @p barrier{CustomModelData:4,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}} 1
+execute at @e[nbt={Inventory:[{id:"minecraft:barrier",tag:{CustomModelData:3,display:{Name:'{"text":"Sayfa 2","bold":true,"italic":false}'}}}]}] run clear @p barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 2","bold":true,"italic":false}'}} 1
 
-#farming page 1#
+#farming page 1
 execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.1 with sugar_cane{display:{Name:'{"text":"Seker Kamisi","bold":true,"italic":false}'}} 64
 execute as @p[nbt={Inventory:[{id:"minecraft:sugar_cane",tag:{display:{Name:'{"text":"Seker Kamisi","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/sugarcane
 execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.2 with potato{display:{Name:'{"text":"Patates","bold":true,"italic":false}'}} 64
@@ -49,6 +46,12 @@ execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ contain
 execute as @p[nbt={Inventory:[{id:"minecraft:glow_berries",tag:{display:{Name:'{"text":"Parıldayan Meyve","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/glow_berries
 execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.13 with sweet_berries{display:{Name:'{"text":"Tatlı Orman Meyvesi","bold":true,"italic":false}'}} 64
 execute as @p[nbt={Inventory:[{id:"minecraft:sweet_berries",tag:{display:{Name:'{"text":"Tatlı Orman Meyvesi","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/sweet_berries
+execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.14 with white_wool{display:{Name:'{"text":"Yün","bold":true,"italic":false}'}} 16
+execute as @p[nbt={Inventory:[{id:"minecraft:white_wool",tag:{display:{Name:'{"text":"Yün","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/wool
+execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.15 with leather{display:{Name:'{"text":"Deri","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:leather",tag:{display:{Name:'{"text":"Deri","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/leather
+execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.16 with feather{display:{Name:'{"text":"Tüy","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:feather",tag:{display:{Name:'{"text":"Tüy","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/feather
 execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.19 with beef{display:{Name:'{"text":"İnek Eti","bold":true,"italic":false}'}} 32
 execute as @p[nbt={Inventory:[{id:"minecraft:beef",tag:{display:{Name:'{"text":"İnek Eti","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/beef
 execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.20 with porkchop{display:{Name:'{"text":"Domuz Eti","bold":true,"italic":false}'}} 32
@@ -63,14 +66,8 @@ execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ contain
 execute as @p[nbt={Inventory:[{id:"minecraft:salmon",tag:{display:{Name:'{"text":"Somon Balığı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/salmon
 execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.25 with cod{display:{Name:'{"text":"Morina Balığı","bold":true,"italic":false}'}} 64
 execute as @p[nbt={Inventory:[{id:"minecraft:cod",tag:{display:{Name:'{"text":"Morina Balığı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/cod
-execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.15 with leather{display:{Name:'{"text":"Deri","bold":true,"italic":false}'}} 32
-execute as @p[nbt={Inventory:[{id:"minecraft:leather",tag:{display:{Name:'{"text":"Deri","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/leather
-execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.16 with feather{display:{Name:'{"text":"Tüy","bold":true,"italic":false}'}} 32
-execute as @p[nbt={Inventory:[{id:"minecraft:feather",tag:{display:{Name:'{"text":"Tüy","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/feather
-execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.14 with white_wool{display:{Name:'{"text":"Yün","bold":true,"italic":false}'}} 16
-execute as @p[nbt={Inventory:[{id:"minecraft:white_wool",tag:{display:{Name:'{"text":"Yün","bold":true,"italic":false}'}}}]}] run function kel:shop/products/farming/wool
 
-#/farming page 2
+#mining page 2
 execute at @e[tag=1,scores={page=2}] as @e run item replace block ~ ~1 ~ container.1 with diamond{display:{Name:'{"text":"Elmas","bold":true,"italic":false}'}} 1
 execute as @p[nbt={Inventory:[{id:"minecraft:diamond",tag:{display:{Name:'{"text":"Elmas","bold":true,"italic":false}'}}}]}] run function kel:shop/products/mining/diamond
 execute at @e[tag=1,scores={page=2}] as @e run item replace block ~ ~1 ~ container.2 with emerald{display:{Name:'{"text":"Zümrüt","bold":true,"italic":false}'}} 16
@@ -114,22 +111,67 @@ execute as @p[nbt={Inventory:[{id:"minecraft:glass_bottle",tag:{display:{Name:'{
 execute at @e[tag=1,scores={page=2}] as @e run item replace block ~ ~1 ~ container.25 with ghast_tear{display:{Name:'{"text":"Ghast Gözyaşı","bold":true,"italic":false}'}} 2
 execute as @p[nbt={Inventory:[{id:"minecraft:ghast_tear",tag:{display:{Name:'{"text":"Ghast Gözyaşı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/mining/ghast_tear
 
-#gui design
-execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:4,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}
-execute at @e[tag=1,scores={page=2}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 2","bold":true,"italic":false}'}}
-execute at @e[nbt={Inventory:[{id:"minecraft:barrier",tag:{CustomModelData:4,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}}]}] run clear @p barrier{CustomModelData:4,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}} 1
-execute at @e[nbt={Inventory:[{id:"minecraft:barrier",tag:{CustomModelData:3,display:{Name:'{"text":"Sayfa 2","bold":true,"italic":false}'}}}]}] run clear @p barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 2","bold":true,"italic":false}'}} 1
+#drop item page 4
+
+#drop item page 5
+#execute at @e[tag=1,scores={page=5}] as @e[tag=1] run function kel:shop/itemdetector
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.0 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.1 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.2 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.3 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.4 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.5 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.6 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.7 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.9 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.10 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.11 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.12 with barrier
+
+#still working on page 5 
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace block ~ ~1 ~ container.9 from entity @p inventory.0 
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace block ~ ~1 ~ container.12 from entity @p inventory.0
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace entity @p inventory.0 from block ~ ~1 ~ container.13
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace block ~ ~1 ~ container.13 from block ~ ~1 ~ container.12
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace entity @p inventory.0 from block ~ ~1 ~ container.13
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run function kel:shop/products/farming/bamboo
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Count: 64b}]} run item replace block ~ ~1 ~ container.13 with air
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Count: 64b}]} run function kel:shop/products/farming/beef
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Count: 32b}]} run function kel:shop/products/farming/beef
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Count: 32b}]} run item replace block ~ ~1 ~ container.13 with air
+#execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Count: 64b}]} run item replace block ~ ~1 ~ container.13 with beef 32
+
+#execute as @e[tag=1,scores={page=5}] at @e[tag=1] run item replace block ~ ~1 ~ container.13 with air 
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.14 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.15 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.16 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.17 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.18 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.19 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.20 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.21 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.22 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.23 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.24 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.25 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.27 with barrier
+#execute as @p[nbt={Inventory:[{Slot: 5b, id:"minecraft:nether_wart",Count: 1b}]}] run say hi
+
+#drop item page 6
+
+#drop item page 7
 
 #page up page down
-execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.0 with arrow{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}} 1
-execute at @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] run scoreboard players remove @e[tag=1,limit=1,sort=nearest] page 1
-execute as @e[tag=1] at @e run playsound minecraft:block.note_block.hat ambient @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] ~ ~ ~ 1 1
-execute as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] as @s run clear @s arrow{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}} 1
-execute as @e[tag=1] at @e run playsound minecraft:block.note_block.hat ambient @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] ~ ~ ~ 1 1
-execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.8 with arrow{display :{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}} 1
-execute at @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] run scoreboard players add @e[tag=1,limit=1,sort=nearest] page 1
-execute as @p[nbt={Inventory:[{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] as @s run clear @s arrow{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}} 1
-execute as @e[tag=1,scores={page=..0}] at @e run scoreboard players set @s page 1
+execute as @p[nbt={Inventory:[{id:"minecraft:spectral_arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] run execute at @s as @s run scoreboard players remove @e[tag=1,limit=1,sort=nearest] page 1
+execute as @p[nbt={Inventory:[{id:"minecraft:spectral_arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] run execute at @s as @s run playsound minecraft:block.note_block.hat ambient @p[nbt={Inventory:[{id:"minecraft:spectral_arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] ~ ~ ~ 1 1
+execute as @p[nbt={Inventory:[{id:"minecraft:tipped_arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] run execute at @s as @s run scoreboard players add @e[tag=1,limit=1,sort=nearest] page 1
+execute as @p[nbt={Inventory:[{id:"minecraft:tipped_arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] run execute at @s as @s run playsound minecraft:block.note_block.hat ambient @p[nbt={Inventory:[{id:"minecraft:tipped_arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] ~ ~ ~ 1 1
+execute as @p[nbt={Inventory:[{id:"minecraft:tipped_arrow",tag:{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}}}]}] run clear @s tipped_arrow{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}} 1
+execute as @p[nbt={Inventory:[{id:"minecraft:spectral_arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] run clear @s spectral_arrow{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}} 1
+execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.0 with spectral_arrow{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}} 1
+execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.8 with tipped_arrow{display:{Name:'{"text":"Sonraki Sayfa","bold":true,"italic":false}'}} 1
+execute as @e[tag=1,scores={page=0}] run scoreboard players set @s page 7
+execute as @e[tag=1,scores={page=8}] run scoreboard players set @s page 1
 
 #free spaces
 execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.18 with minecraft:barrier
@@ -139,3 +181,21 @@ execute as @p[nbt={Inventory:[{id:"minecraft:barrier"}]}] run clear @s minecraft
 
 #execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.3 with diamond{CustomModelData:2,display:{Name:'{"text":"Kel Coin","bold":true,"italic":false}'}} 1
 execute as @e[tag=1] at @e run clear @p[nbt={Inventory:[{id:"minecraft:diamond",tag:{CustomModelData:2,display:{Name:'{"text":"Kel Coin","bold":true,"italic":false}'}}}]}] diamond{CustomModelData:2,display:{Name:'{"text":"Kel Coin","bold":true,"italic":false}'}} 1
+
+
+#execute as @e[tag=1] at @e run clear @a itemdatası{display:{Name:'{"text":"itemdispname","bold":true,"italic":false}'}} itemcount
+#execute as @s store result score @s item_count run clear @s minecraft:itemdatası 0
+#execute as @s[scores={item_count=itemcount..}] run scoreboard players set @s selling 1
+#execute as @s[scores={selling=1}] run scoreboard players add @s balance 1
+#execute as @s[scores={selling=1}] run clear @s minecraft:itemdatası itemcount
+#execute as @s[scores={selling=1}] run tellraw @s ["",{"text":"itemcountx","bold":true,"color":"gold"},{"text":" itemdispname başarıyla satıldı!","color":"yellow"}]
+#execute as @s[scores={selling=1}] run execute as @s at @s run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1
+#execute as @s[scores={selling=0}] run tellraw @s {"text":"Yetersiz Eşya!","bold":true,"color":"dark_red"}
+#execute as @s[scores={selling=0}] run execute as @s at @s run playsound minecraft:entity.villager.no ambient @s ~ ~ ~ 1 1
+#execute as @s run scoreboard players set @s item_count 0
+#execute as @s run scoreboard players set @s selling 0
+
+#itemdispname
+#itemdatası
+#itemcount
+#

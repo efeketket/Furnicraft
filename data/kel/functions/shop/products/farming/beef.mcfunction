@@ -1,5 +1,7 @@
 execute as @e[tag=1] at @e run clear @a beef{display:{Name:'{"text":"İnek Eti","bold":true,"italic":false}'}} 32
 execute as @s store result score @s item_count run clear @s minecraft:beef 0
+execute at @s if score @e[sort=nearest,limit=1,tag=1] page matches 5 run scoreboard players add @s item_count 32
+execute at @s if score @e[sort=nearest,limit=1,tag=1] page matches 5 run give @s minecraft:beef 32
 execute as @s[scores={item_count=32..}] run scoreboard players set @s selling 1
 execute as @s[scores={selling=1}] run scoreboard players add @s balance 1
 execute as @s[scores={selling=1}] run clear @s minecraft:beef 32
