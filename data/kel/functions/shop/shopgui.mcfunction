@@ -114,7 +114,7 @@ execute as @p[nbt={Inventory:[{id:"minecraft:ghast_tear",tag:{display:{Name:'{"t
 #drop item page 4
 
 #drop item page 5
-execute at @e[tag=1,scores={page=5}] as @p run function kel:shop/empty_check
+execute unless block ~ ~1 ~ chest{Items:[{Slot:13b}]} run execute at @e[tag=1,scores={page=5}] as @p run function kel:shop/empty_check
 #farming drop sell
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Slot:13b}]} run function kel:shop/products/farming/bamboo
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Slot:13b}]} run function kel:shop/products/farming/beef
