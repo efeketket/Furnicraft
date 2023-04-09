@@ -115,7 +115,9 @@ execute at @e[tag=1,scores={page=2}] as @e run item replace block ~ ~1 ~ contain
 execute as @p[nbt={Inventory:[{id:"minecraft:ghast_tear",tag:{display:{Name:'{"text":"Ghast Gözyaşı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/mining/ghast_tear
 #page 3
 
+
 #page 4
+execute at @e[tag=1,scores={page=4}] as @e[tag=1,scores={page=4}] run item replace block ~ ~1 ~ container.13 with air
 
 #page 5
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{Slot:13b}]} run function kel:shop/empty_place
@@ -161,8 +163,8 @@ execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"min
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:rotten_flesh",Slot:13b}]} run function kel:shop/products/mining/rotten_flesh
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:spider_eye",Slot:13b}]} run function kel:shop/products/mining/spider_eye
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:string",Slot:13b}]} run function kel:shop/products/mining/string
-#
 execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.13 with air
+#
 execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.0 with barrier{empty:1b}
 execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.1 with barrier{empty:1b}
 execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.2 with barrier{empty:1b}
@@ -190,8 +192,11 @@ execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item repla
 execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.27 with barrier{empty:1b}
 
 #page 6
-
+execute at @e[tag=1,scores={page=6}] as @e[tag=1,scores={page=6}] run item replace block ~ ~1 ~ container.13 with air
 #page 7
+
+
+
 
 #page up page down
 execute as @p[nbt={Inventory:[{id:"minecraft:spectral_arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] run execute at @s as @s run scoreboard players remove @e[tag=1,limit=1,sort=nearest] page 1
@@ -207,7 +212,7 @@ execute as @e[tag=1,scores={page=8}] run scoreboard players set @s page 1
 
 #free spaces
 execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.18 with minecraft:barrier{empty:1b}
-execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.9 with minecraft:barrier{empty:1b}
+execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.9 with minecraft:barrier{display:{Name:'{"text":"Make sure u are the nearest player to the shipping bin","bold":true,"italic":false,"color": "aqua"}'},empty:1b}
 execute at @e[tag=1] as @e run item replace block ~ ~1 ~ container.17 with minecraft:barrier{empty:1b}
 execute as @p[nbt={Inventory:[{id:"minecraft:barrier"}]}] run clear @s minecraft:barrier{empty:1b}
 

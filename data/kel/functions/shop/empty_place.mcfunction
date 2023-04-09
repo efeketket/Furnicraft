@@ -1,3 +1,4 @@
+execute as @s run function kel:shop/empty_check
 execute if score @s empty_check matches 1 run item replace entity @s inventory.8 from block ~ ~1 ~ container.13
 execute if score @s empty_check matches 2 run item replace entity @s inventory.7 from block ~ ~1 ~ container.13
 execute if score @s empty_check matches 3 run item replace entity @s inventory.6 from block ~ ~1 ~ container.13
