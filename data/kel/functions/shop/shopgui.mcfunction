@@ -110,12 +110,12 @@ execute at @e[tag=1,scores={page=2}] as @e run item replace block ~ ~1 ~ contain
 execute as @p[nbt={Inventory:[{id:"minecraft:glass_bottle",tag:{display:{Name:'{"text":"Boş Şişe","bold":true,"italic":false}'}}}]}] run function kel:shop/products/mining/glass_bottle
 execute at @e[tag=1,scores={page=2}] as @e run item replace block ~ ~1 ~ container.25 with ghast_tear{display:{Name:'{"text":"Ghast Gözyaşı","bold":true,"italic":false}'}} 2
 execute as @p[nbt={Inventory:[{id:"minecraft:ghast_tear",tag:{display:{Name:'{"text":"Ghast Gözyaşı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/mining/ghast_tear
-
 #drop item page 4
-
 #drop item page 5
-execute as @e[tag=1,scores={page=5},limit=1] unless block ~ ~1 ~ chest{Items:[{Slot:13b}]} run execute at @e[tag=1,scores={page=5}] as @p[limit=1,sort=nearest,distance=..5] run function kel:shop/empty_check
-
+#execute at @e[tag=1,scores={page=5},limit=1] unless block ~ ~1 ~ chest{Items:[{Slot:13b}]} run execute at @e[tag=1,scores={page=5}] as @p run function kel:shop/empty_check
+#execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5},limit=1] if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Slot:13b}]} run execute as @p run function kel:shop/empty_check
+#execute as @e[tag=1,scores={page=5}] at @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.13 with air 
+execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{Slot:13b}]} run function kel:shop/empty_place
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:bamboo",Slot:13b}]} run function kel:shop/products/farming/bamboo
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beef",Slot:13b}]} run function kel:shop/products/farming/beef
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:beetroot",Slot:13b}]} run function kel:shop/products/farming/beetroot
@@ -158,41 +158,33 @@ execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"min
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:rotten_flesh",Slot:13b}]} run function kel:shop/products/mining/rotten_flesh
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:spider_eye",Slot:13b}]} run function kel:shop/products/mining/spider_eye
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{id:"minecraft:string",Slot:13b}]} run function kel:shop/products/mining/string
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.13 with air
 
-
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.0 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.1 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.2 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.3 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.4 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.5 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.6 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.7 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.9 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.10 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.11 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.12 with barrier
-execute as @e[tag=1,scores={page=5}] at @e[tag=1] run item replace block ~ ~1 ~ container.13 with air 
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.14 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.15 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.16 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.17 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.18 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.19 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.20 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.21 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.22 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.23 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.24 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.25 with barrier
-execute at @e[tag=1,scores={page=5}] as @e[tag=1] run item replace block ~ ~1 ~ container.27 with barrier
-
-
-#execute as @p[nbt={Inventory:[{Slot: 5b, id:"minecraft:nether_wart",Count: 1b}]}] run say hi
-
-#drop item page 6
-
-#drop item page 7
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.0 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.1 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.2 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.3 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.4 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.5 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.6 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.7 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.9 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.10 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.11 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.12 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.14 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.15 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.16 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.17 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.18 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.19 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.20 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.21 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.22 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.23 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.24 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.25 with barrier
+execute at @e[tag=1,scores={page=5}] as @e[tag=1,scores={page=5}] run item replace block ~ ~1 ~ container.27 with barrier
 
 #page up page down
 execute as @p[nbt={Inventory:[{id:"minecraft:spectral_arrow",tag:{display:{Name:'{"text":"Önceki Sayfa","bold":true,"italic":false}'}}}]}] run execute at @s as @s run scoreboard players remove @e[tag=1,limit=1,sort=nearest] page 1
