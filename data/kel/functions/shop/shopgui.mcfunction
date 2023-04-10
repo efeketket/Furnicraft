@@ -117,7 +117,47 @@ execute as @p[nbt={Inventory:[{id:"minecraft:ghast_tear",tag:{display:{Name:'{"t
 
 
 #page 4
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.1 with spruce_log{display:{Name:'{"text":"Ladin Kütüğü","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:spruce_log",tag:{display:{Name:'{"text":"Ladin Kütüğü","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/spruce_log
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.2 with jungle_log{display:{Name:'{"text":"Orman Ağacı Kütüğü","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:jungle_log",tag:{display:{Name:'{"text":"Orman Ağacı Kütüğü","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/jungle_log
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.3 with oak_log{display:{Name:'{"text":"Meşe Kütüğü","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:oak_log",tag:{display:{Name:'{"text":"Meşe Kütüğü","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/oak_log
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.4 with acacia_log{display:{Name:'{"text":"Akasya Kütüğü","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:acacia_log",tag:{display:{Name:'{"text":"Akasya Kütüğü","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/acacia_log
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.5 with dark_oak_log{display:{Name:'{"text":"Koyu Meşe Kütüğü","bold":true,"italic":false}'}} 16
+execute as @p[nbt={Inventory:[{id:"minecraft:dark_oak_log",tag:{display:{Name:'{"text":"Koyu Meşe Kütüğü","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/dark_oak_log
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.6 with mangrove_log{display:{Name:'{"text":"Mangrov Kütüğü","bold":true,"italic":false}'}} 16
+execute as @p[nbt={Inventory:[{id:"minecraft:mangrove_log",tag:{display:{Name:'{"text":"Mangrov Kütüğü","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/mangrove_log
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.7 with birch_log{display:{Name:'{"text":"Huş Kütüğü","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:birch_log",tag:{display:{Name:'{"text":"Huş Kütüğü","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/birch_log
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.10 with cobbled_deepslate{display:{Name:'{"text":"Kırık Derin Kayrak Taşı","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:cobbled_deepslate",tag:{display:{Name:'{"text":"Kırık Derin Kayrak Taşı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/cobbled_deepslate
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.11 with deepslate{display:{Name:'{"text":"Derin Kayrak Taşı","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:deepslate",tag:{display:{Name:'{"text":"Derin Kayrak Taşı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/deepslate
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.12 with tuff{display:{Name:'{"text":"Tuff","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:tuff",tag:{display:{Name:'{"text":"Tuff","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/tuff
 execute at @e[tag=1,scores={page=4}] as @e[tag=1,scores={page=4}] run item replace block ~ ~1 ~ container.13 with air
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.14 with andesite{display:{Name:'{"text":"Andezit","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:andesite",tag:{display:{Name:'{"text":"Andezit","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/andesite
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.15 with granite{display:{Name:'{"text":"Granit","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:granite",tag:{display:{Name:'{"text":"Granit","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/granite
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.16 with diorite{display:{Name:'{"text":"Diyorit","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:diorite",tag:{display:{Name:'{"text":"Diyorit","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/diorite
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.19 with cobblestone{display:{Name:'{"text":"Kırık Taş","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:cobblestone",tag:{display:{Name:'{"text":"Kırık Taş","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/cobblestone
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.20 with stone{display:{Name:'{"text":"Taş","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:stone",tag:{display:{Name:'{"text":"Taş","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/stone
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.21 with end_stone{display:{Name:'{"text":"End Taşı","bold":true,"italic":false}'}} 32
+execute as @p[nbt={Inventory:[{id:"minecraft:end_stone",tag:{display:{Name:'{"text":"End Taşı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/end_stone
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.22 with netherrack{display:{Name:'{"text":"Nether Taşı","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:netherrack",tag:{display:{Name:'{"text":"Nether Taşı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/netherrack
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.23 with quartz_block{display:{Name:'{"text":"Kuvars Bloğu","bold":true,"italic":false}'}} 16
+execute as @p[nbt={Inventory:[{id:"minecraft:quartz_block",tag:{display:{Name:'{"text":"Kuvars Bloğu","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/quartz_block
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.24 with glowstone{display:{Name:'{"text":"Işık Taşı","bold":true,"italic":false}'}} 16
+execute as @p[nbt={Inventory:[{id:"minecraft:glowstone",tag:{display:{Name:'{"text":"Işık Taşı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/glowstone
+execute at @e[tag=1,scores={page=4}] as @e run item replace block ~ ~1 ~ container.25 with sandstone{display:{Name:'{"text":"Kum Taşı","bold":true,"italic":false}'}} 64
+execute as @p[nbt={Inventory:[{id:"minecraft:sandstone",tag:{display:{Name:'{"text":"Kum Taşı","bold":true,"italic":false}'}}}]}] run function kel:shop/products/blocks/sandstone
 
 #page 5
 execute at @e[tag=1,scores={page=5}] as @p if block ~ ~1 ~ chest{Items:[{Slot:13b}]} run function kel:shop/empty_place
