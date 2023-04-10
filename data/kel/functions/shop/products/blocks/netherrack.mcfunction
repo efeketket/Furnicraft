@@ -5,7 +5,7 @@ execute as @s[scores={selling=1}] run scoreboard players add @s balance 1
 execute as @s[scores={selling=1}] run clear @s minecraft:netherrack 128
 execute as @s[scores={selling=1}] run tellraw @s ["",{"text":"128x","bold":true,"color":"gold"},{"text":" Nether Taşı başarıyla satıldı!","color":"yellow"}]
 execute as @s[scores={selling=1}] run execute as @s at @s run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1
-execute as @s[scores={selling=0}] run tellraw @s {"text":"Yetersiz Eşya!","bold":true,"color":"dark_red"}
+execute as @s[scores={selling=0}] run tellraw @s ["",{"text":"Yetersiz Eşya! Bu ürünü satabilmek için ","bold":true,"color":"dark_red"},{"text":"x128 ","bold":true,"color":"red"},{"text":"ürün gerekiyor.","bold":true,"color":"dark_red"}]
 execute as @s[scores={selling=0}] run execute as @s at @s run playsound minecraft:entity.villager.no ambient @s ~ ~ ~ 1 1
 execute as @s run scoreboard players set @s item_count 0
 execute as @s run scoreboard players set @s selling 0

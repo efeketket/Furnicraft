@@ -1,7 +1,5 @@
 execute as @e[tag=1] at @e run clear @a bamboo{display:{Name:'{"text":"Bambu","bold":true,"italic":false}'}} 64
 execute as @s store result score @s item_count run clear @s minecraft:bamboo 0
-    #execute at @s if score @e[sort=nearest,limit=1,tag=1] page matches 5 run scoreboard players add @s item_count 64
-    #execute at @s if score @e[sort=nearest,limit=1,tag=1] page matches 5 run give @s minecraft:bamboo 64
 execute as @s[scores={item_count=128..}] run scoreboard players set @s selling 1
 execute as @s[scores={selling=1}] run scoreboard players add @s balance 1
 execute as @s[scores={selling=1}] run clear @s minecraft:bamboo 128
