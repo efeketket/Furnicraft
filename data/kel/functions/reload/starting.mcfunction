@@ -7,11 +7,13 @@ scoreboard objectives add deposit trigger
 scoreboard objectives add depositwrite dummy
 scoreboard players set @a depositwrite 1
 scoreboard objectives add depositcheck dummy
+scoreboard objectives add depositing dummy
 
 #withdraw
 scoreboard objectives add withdraw trigger
 scoreboard objectives add withdrawwrite dummy
 scoreboard objectives add withdrawcheck dummy
+scoreboard objectives add withdrawing dummy
 
 #playtime
 scoreboard objectives add playtick dummy
