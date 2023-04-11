@@ -16,3 +16,8 @@ execute if score @s depositcheck matches 1 run execute as @s at @s run scoreboar
 execute if score @s depositcheck matches 1 run execute as @s at @s run scoreboard players add @s depositwrite 1
 execute if score @s depositcheck matches 1 run execute as @s at @s run execute if score @s deposit matches 0 run execute as @s at @s run scoreboard players set @s depositwrite 1
 execute if score @s depositcheck matches 1 run execute as @s at @s run execute if score @s deposit matches 0 run execute as @s at @s run scoreboard players set @s depositcheck 1
+
+
+
+
+
