@@ -8,8 +8,6 @@ execute as @e[tag=1] at @s if block ~ ~1 ~ air run kill @s
 #craft shop
 execute as @a[nbt={Inventory:[{id:"minecraft:knowledge_book"}]}] run give @s[nbt={Inventory:[{id:"minecraft:knowledge_book"}]}] minecraft:bat_spawn_egg{display:{Name:'{"text":"Satış Kutusu","bold":true,"italic":false}'},CustomModelData:2} 1
 execute as @a[nbt={Inventory:[{id:"minecraft:knowledge_book"}]}] run clear @s minecraft:knowledge_book 1
-execute at @e[type=minecraft:bat,name="Satış Kutusu"] run execute as @p run function kel:shop/placeshop
-execute at @e[type=minecraft:bat,name="Satış Kutusu"] run kill @e[type=minecraft:bat,name="Satış Kutusu"]
 
 #shop gui design
 execute at @e[tag=1,scores={page=1}] as @e run item replace block ~ ~1 ~ container.26 with barrier{CustomModelData:3,display:{Name:'{"text":"Sayfa 1","bold":true,"italic":false}'}}
