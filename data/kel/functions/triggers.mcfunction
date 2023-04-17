@@ -21,3 +21,10 @@ execute as @a[scores={balanceshow=1..}] at @p run execute as @s run scoreboard p
 scoreboard players enable @a playtimeshow
 execute as @a[scores={playtimeshow=1..}] at @s run execute as @s at @s run function kel:playtime/playtimeshow
 execute as @a[scores={playtimeshow=1..}] at @s run execute as @s run scoreboard players set @a playtimeshow 0
+
+#rotation trigger
+scoreboard players enable @a rotation
+execute as @a[scores={rotation=2}] at @s run execute as @s at @s run function kel:playershop/rotation
+execute as @a[scores={rotation=1}] at @s run execute as @s at @s run function kel:playershop/rotation
+execute as @a[scores={rotation=1..}] at @s run execute as @s run scoreboard players set @a rotation 0
+#rotation trigger
