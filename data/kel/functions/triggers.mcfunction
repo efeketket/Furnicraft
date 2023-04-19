@@ -24,7 +24,9 @@ execute as @a[scores={playtimeshow=1..}] at @s run execute as @s run scoreboard 
 
 #rotation trigger
 scoreboard players enable @a rotation
-execute as @a[scores={rotation=2}] at @s run execute as @s at @s run function kel:playershop/rotation
 execute as @a[scores={rotation=1}] at @s run execute as @s at @s run function kel:playershop/rotation
+execute as @a[scores={rotation=2}] at @s run execute as @s at @s run function kel:playershop/rotation
+execute as @a[scores={rotation=3}] at @s run execute as @s at @s run function kel:playershop/rotation
+execute as @a[scores={rotation=4}] at @s run execute as @s at @s run function kel:playershop/rotation
 execute as @a[scores={rotation=1..}] at @s run execute as @s run scoreboard players set @a rotation 0
 #rotation trigger
