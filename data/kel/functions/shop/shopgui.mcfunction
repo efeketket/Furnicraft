@@ -2,7 +2,8 @@
 execute as @e[tag=1] at @s if block ~ ~1 ~ air run kill @e[type=item,distance=..2]
 execute as @e[tag=1] at @s if block ~ ~1 ~ air run scoreboard players remove @p[sort= nearest,limit=1] shop_count 1
 execute as @e[tag=1] at @s if block ~ ~1 ~ air run execute if score @p[sort= nearest,limit=1] shop_count matches -1 run scoreboard players set @p[sort= nearest,limit=1] shop_count 0
-execute as @e[tag=1] at @s if block ~ ~1 ~ air run give @p[sort=nearest,scores={shop_count=..2},limit=1] minecraft:bat_spawn_egg{display:{Name:'{"text":"Satış Kutusu","bold":true,"italic":false}'},CustomModelData:2} 1
+execute as @e[tag=1] at @s if block ~ ~1 ~ air run summon item ~ ~2 ~ {Item:{id:"minecraft:bat_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Satış Kutusu","bold":true,"italic":false}'},CustomModelData:2}}}
+#execute as @e[tag=1] at @s if block ~ ~1 ~ air run give @p[sort=nearest,scores={shop_count=..2},limit=1] minecraft:bat_spawn_egg{display:{Name:'{"text":"Satış Kutusu","bold":true,"italic":false}'},CustomModelData:2} 1
 execute as @e[tag=1] at @s if block ~ ~1 ~ air run kill @s 
 
 #craft shop

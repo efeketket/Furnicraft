@@ -1,0 +1,2 @@
+data modify entity @e[limit=1,type=item,sort=nearest] Item set from block ~ ~1 ~ Items[{Slot:13b}]
+#data modify entity @e[tag=tag3,limit=1,sort=nearest] CustomName set from block ~ ~1 ~ CustomName[{Slot:13b}]

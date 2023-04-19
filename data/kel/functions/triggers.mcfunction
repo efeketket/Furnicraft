@@ -8,7 +8,7 @@ execute as @a[scores={deposit=1..}] at @p run execute as @s at @s run scoreboard
 execute as @a[scores={deposit=1..}] at @p run execute as @s at @s run function kel:bank/deposit
 
 #withdraw trigger
-scoreboard players enable @a withdraw
+scoreboard players enable @a[scores={withdrawing=0}] withdraw
 execute as @a[scores={withdraw=1..,withdrawing=0}] at @p run execute as @s at @s run scoreboard players set @s withdrawcheck 1
 execute as @a[scores={withdraw=1..,withdrawing=0}] at @p run execute as @s at @s run function kel:bank/withdraw
 
