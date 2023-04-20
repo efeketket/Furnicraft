@@ -30,5 +30,6 @@ scoreboard objectives add shop_count dummy
 scoreboard objectives add page dummy
 scoreboard objectives add empty_check dummy
 
-#rotation trigger
+#playershop trigger
 scoreboard objectives add rotation trigger
+scoreboard objectives add shopnamevisible trigger
