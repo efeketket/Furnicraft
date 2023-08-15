@@ -1,0 +1,30 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "Chair 5",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                },
+                "entity": "this"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{furniture:1b,chair5:1b,CustomModelData:330,display:{Name:'{\"text\":\"Acacia Park Bench\",\"color\":\"yellow\",\"italic\":false}'},SkullOwner:{Id:[I;-491300483,-1213741573,1116959756,215400382],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRlZjFlZjc4ODFkYTQzOWUzM2ZjMTg3MzBjMzkxNWJhY2VlODVjNDEwNWU2OGQxYjQxMGEyNDk5ZDViYjJkYiJ9fX0=\"}]}}}"
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }
