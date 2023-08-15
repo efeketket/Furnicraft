@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S",
+        "OO",
+        "OO"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:axes"
+        },
+        "S": {
+            "item": "minecraft:shears"
+        },
+        "O": {
+            "tag": "minecraft:planks"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

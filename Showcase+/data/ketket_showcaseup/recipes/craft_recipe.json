@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "_",
+        "O"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:glass"
+        },
+        "O": {
+            "tag": "minecraft:slabs"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}
