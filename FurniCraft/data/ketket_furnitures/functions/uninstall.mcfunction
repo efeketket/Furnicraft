@@ -13,5 +13,4 @@ kill @e[tag=wood,type=block_display]
 kill @e[tag=wool,type=block_display]
 kill @e[tag=furniture]
 
-
-tellraw @a ["","[FurniCraft]",{"text":" Datapack successfully uninstalled. ","color":"dark_green"}]
+tellraw @a ["","[FurniCraft]",{"text":" Datapack successfully uninstalled. All Furnicraft materials cleared from loaded chunks.","color":"dark_green"}]
