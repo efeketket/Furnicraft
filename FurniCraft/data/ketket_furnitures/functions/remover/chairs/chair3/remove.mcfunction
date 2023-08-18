@@ -1,4 +1,4 @@
-loot spawn ~ ~ ~ loot ketket_furnitures:chairs/chair3
+execute as @s[tag=dropitem] run loot spawn ~ ~ ~ loot ketket_furnitures:chairs/chair3
 playsound minecraft:block.wood.break ambient @a[distance=..10] ~ ~ ~ 3 0
 particle minecraft:block minecraft:chest ~ ~ ~ .125 .125 .125 0 40
 

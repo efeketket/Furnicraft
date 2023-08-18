@@ -1,3 +1,4 @@
+execute on attacker run execute as @s[gamemode=!creative] run tag @e[type=interaction,distance=..0.7] add dropitem
 tag @s add mustdie
 execute as @s[tag=chair] run kill @e[tag=sitable,sort=nearest,limit=1]
 
