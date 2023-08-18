@@ -1,55 +1,21 @@
-execute if data block ~ ~ ~ Items[{id:"minecraft:white_wool"}] run tag @s add woolon
-execute as @s[tag=woolon] store result score @s woolcount run data get block ~ ~ ~ Items[{id:"minecraft:white_wool"}].Count 
-execute as @s[tag=woolon] unless data block ~ ~ ~ Items[{id:"minecraft:white_wool"}] run function ketket_furnitures:carpenterbench/empty
-execute unless data block ~ ~ ~ Items[{id:"minecraft:white_wool"}] run tag @s remove woolon
+execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:white_wool"}] if data block ~ ~ ~ Items[{Slot:10b}] run tag @s add slot10
+execute if data block ~ ~ ~ Items[{Slot:9b}] if data block ~ ~ ~ Items[{Slot:10b,id:"minecraft:white_wool"}] run tag @s add slot9
+execute if data block ~ ~ ~ Items[{Slot:9b}] unless data block ~ ~ ~ Items[{Slot:10b}] run tag @s add slot9
+execute unless data block ~ ~ ~ Items[{Slot:9b}] if data block ~ ~ ~ Items[{Slot:10b}] run tag @s add slot10
 
+execute if data block ~ ~ ~ Items[{id:"minecraft:white_wool",Slot:9b}] run tag @s add woolon9
+execute if data block ~ ~ ~ Items[{id:"minecraft:white_wool",Slot:10b}] run tag @s add woolon10
+
+execute as @s[tag=woolon9] store result score @s woolcount run data get block ~ ~ ~ Items[{Slot:9b}].Count 
+execute as @s[tag=woolon10] store result score @s woolcount run data get block ~ ~ ~ Items[{Slot:10b}].Count 
+execute as @s[tag=woolon9] unless data block ~ ~ ~ Items[{id:"minecraft:white_wool",Slot:9b}] run function ketket_furnitures:carpenterbench/empty
+execute as @s[tag=woolon10] unless data block ~ ~ ~ Items[{id:"minecraft:white_wool",Slot:10b}] run function ketket_furnitures:carpenterbench/empty
+execute as @s[tag=woolon9] unless data block ~ ~ ~ Items[{id:"minecraft:white_wool",Slot:9b}] run tag @s remove woolon9
+execute as @s[tag=woolon10] unless data block ~ ~ ~ Items[{id:"minecraft:white_wool",Slot:10b}] run tag @s remove woolon10
 tag @s add empty
-execute if data block ~ ~ ~ Items[{id:"minecraft:iron_block"}] run function ketket_furnitures:carpenterbench/menu/fridge
 
-execute if data block ~ ~ ~ Items[{id:"minecraft:spruce_planks"}] run function ketket_furnitures:carpenterbench/menu/spruce
-execute if data block ~ ~ ~ Items[{id:"minecraft:spruce_log"}] run function ketket_furnitures:carpenterbench/menu/spruce
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_spruce_log"}] run function ketket_furnitures:carpenterbench/menu/spruce
+execute as @s[tag=slot9] at @s run function ketket_furnitures:carpenterbench/slot9
+execute as @s[tag=slot10] at @s run function ketket_furnitures:carpenterbench/slot10
 
-execute if data block ~ ~ ~ Items[{id:"minecraft:birch_planks"}] run function ketket_furnitures:carpenterbench/menu/birch
-execute if data block ~ ~ ~ Items[{id:"minecraft:birch_log"}] run function ketket_furnitures:carpenterbench/menu/birch
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_birch_log"}] run function ketket_furnitures:carpenterbench/menu/birch
-
-execute if data block ~ ~ ~ Items[{id:"minecraft:jungle_planks"}] run function ketket_furnitures:carpenterbench/menu/jungle
-execute if data block ~ ~ ~ Items[{id:"minecraft:jungle_log"}] run function ketket_furnitures:carpenterbench/menu/jungle
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_jungle_log"}] run function ketket_furnitures:carpenterbench/menu/jungle
-
-execute if data block ~ ~ ~ Items[{id:"minecraft:dark_oak_planks"}] run function ketket_furnitures:carpenterbench/menu/dark_oak
-execute if data block ~ ~ ~ Items[{id:"minecraft:dark_oak_log"}] run function ketket_furnitures:carpenterbench/menu/dark_oak
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_dark_oak_log"}] run function ketket_furnitures:carpenterbench/menu/dark_oak
-
-execute if data block ~ ~ ~ Items[{id:"minecraft:oak_planks"}] run function ketket_furnitures:carpenterbench/menu/oak
-execute if data block ~ ~ ~ Items[{id:"minecraft:oak_log"}] run function ketket_furnitures:carpenterbench/menu/oak
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_oak_log"}] run function ketket_furnitures:carpenterbench/menu/oak
-
-execute if data block ~ ~ ~ Items[{id:"minecraft:mangrove_planks"}] run function ketket_furnitures:carpenterbench/menu/mangrove
-execute if data block ~ ~ ~ Items[{id:"minecraft:mangrove_log"}] run function ketket_furnitures:carpenterbench/menu/mangrove
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_mangrove_log"}] run function ketket_furnitures:carpenterbench/menu/mangrove
-
-execute if data block ~ ~ ~ Items[{id:"minecraft:cherry_planks"}] run function ketket_furnitures:carpenterbench/menu/cherry
-execute if data block ~ ~ ~ Items[{id:"minecraft:cherry_log"}] run function ketket_furnitures:carpenterbench/menu/cherry
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_cherry_log"}] run function ketket_furnitures:carpenterbench/menu/cherry
-
-execute if data block ~ ~ ~ Items[{id:"minecraft:bamboo_planks"}] run function ketket_furnitures:carpenterbench/menu/bamboo
-execute if data block ~ ~ ~ Items[{id:"minecraft:bamboo_block"}] run function ketket_furnitures:carpenterbench/menu/bamboo
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_bamboo_block"}] run function ketket_furnitures:carpenterbench/menu/bamboo
-
-execute if data block ~ ~ ~ Items[{id:"minecraft:crimson_planks"}] run function ketket_furnitures:carpenterbench/menu/crimson
-execute if data block ~ ~ ~ Items[{id:"minecraft:crimson_stem"}] run function ketket_furnitures:carpenterbench/menu/crimson
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_crimson_stem"}] run function ketket_furnitures:carpenterbench/menu/crimson
-
-execute if data block ~ ~ ~ Items[{id:"minecraft:acacia_planks"}] run function ketket_furnitures:carpenterbench/menu/acacia
-execute if data block ~ ~ ~ Items[{id:"minecraft:acacia_log"}] run function ketket_furnitures:carpenterbench/menu/acacia
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_acacia_log"}] run function ketket_furnitures:carpenterbench/menu/acacia
-
-execute if data block ~ ~ ~ Items[{id:"minecraft:warped_planks"}] run function ketket_furnitures:carpenterbench/menu/warped
-execute if data block ~ ~ ~ Items[{id:"minecraft:warped_stem"}] run function ketket_furnitures:carpenterbench/menu/warped
-execute if data block ~ ~ ~ Items[{id:"minecraft:stripped_warped_stem"}] run function ketket_furnitures:carpenterbench/menu/warped
-
-
-
-
+tag @s remove slot9
+tag @s remove slot10
