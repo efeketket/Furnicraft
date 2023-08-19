@@ -15,4 +15,4 @@ playsound minecraft:block.wood.break ambient @a[distance=..10] ~ ~ ~ 3 0
 particle minecraft:block minecraft:chest ~ ~ ~ .125 .125 .125 0 40
 
 kill @e[distance=..0.1,tag=chair2,type=block_display]
-execute positioned ~ ~-0.7 ~ run kill @e[type=interaction,distance=..0.1]
+execute positioned ~ ~-0.7 ~ run kill @e[type=interaction,distance=..0.1,tag=chair2]

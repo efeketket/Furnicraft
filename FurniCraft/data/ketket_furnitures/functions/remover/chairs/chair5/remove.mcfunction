@@ -17,4 +17,4 @@ particle minecraft:block minecraft:chest ~ ~ ~ .125 .125 .125 0 40
 execute positioned ~ ~-0.7 ~ run function ketket_furnitures:place/chairs/chair5/disconnect
 
 kill @e[distance=..0.1,tag=chair5,type=block_display]
-execute positioned ~ ~-0.7 ~ run kill @e[type=interaction,distance=..0.1]
+execute positioned ~ ~-0.7 ~ run kill @e[type=interaction,distance=..0.1,tag=chair5]
