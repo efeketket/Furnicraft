@@ -6,12 +6,12 @@ execute as @e[type=player,nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{fu
 
 #-----AİR REMOVER,CLİCK REMOVER-----#
 execute as @e[type=interaction,tag=furniture,nbt={attack:{}}] at @s run function ketket_furnitures:removercheck
-execute as @e[tag=mustdie] run kill @s
+execute as @e[tag=mustdie,tag=furniture] run kill @s
 
-execute as @e[type=interaction,tag=cabinet,tag=cabinet2] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
-execute as @e[type=interaction,tag=cabinet,tag=cabinet1] at @s if block ~ ~2 ~ minecraft:air run function ketket_furnitures:removercheck
-execute as @e[type=interaction,tag=table,tag=table3,tag=main] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
-execute as @e[type=interaction,tag=table,tag=table1,tag=main] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
+execute as @e[type=interaction,tag=cabinet,tag=cabinet2,tag=furniture] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
+execute as @e[type=interaction,tag=cabinet,tag=cabinet1,tag=furniture] at @s if block ~ ~2 ~ minecraft:air run function ketket_furnitures:removercheck
+execute as @e[type=interaction,tag=table,tag=table3,tag=main,tag=furniture] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
+execute as @e[type=interaction,tag=table,tag=table1,tag=main,tag=furniture] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
 
 
 
@@ -24,14 +24,14 @@ execute as @e[type=interaction,tag=furniture] at @s on target if score @s Sneaki
 
 #-----CHAİR SIT INTERACTİONS-----#
 #global interactions sit
-execute as @e[type=interaction,tag=chair,tag=!full] at @s on target if score @s Sneaking_ch matches 0 run function ketket_furnitures:sit/sitfunc
+execute as @e[type=interaction,tag=chair,tag=!full,tag=furniture] at @s on target if score @s Sneaking_ch matches 0 run function ketket_furnitures:sit/sitfunc
 #mobsit
-execute as @e[type=interaction,tag=!full,tag=chair] at @s if entity @e[distance=..2,sort=nearest,limit=1,type=!interaction,type=!item,type=!block_display,type=!armor_stand,type=!item_frame,type=!player,type=!experience_orb,type=!item_display,type=!#arrows,type=!area_effect_cloud,type=!dragon_fireball,type=!end_crystal,type=!ender_pearl,type=!evoker_fangs,type=!eye_of_ender,type=!falling_block,type=!fireball,type=!firework_rocket,type=!glow_item_frame,type=!leash_knot,type=!lightning_bolt,type=!llama_spit,type=!marker,type=!painting,type=!small_fireball,type=!text_display,type=!tnt,type=!arrow] run function ketket_furnitures:sit/mobsitfunc
-execute as @e[type=interaction,tag=chair,tag=full] at @s unless entity @e[tag=sitting,distance=..1] run tag @s remove full
+execute as @e[type=interaction,tag=!full,tag=chair,tag=furniture] at @s if entity @e[distance=..2,sort=nearest,limit=1,type=!interaction,type=!item,type=!block_display,type=!armor_stand,type=!item_frame,type=!player,type=!experience_orb,type=!item_display,type=!#arrows,type=!area_effect_cloud,type=!dragon_fireball,type=!end_crystal,type=!ender_pearl,type=!evoker_fangs,type=!eye_of_ender,type=!falling_block,type=!fireball,type=!firework_rocket,type=!glow_item_frame,type=!leash_knot,type=!lightning_bolt,type=!llama_spit,type=!marker,type=!painting,type=!small_fireball,type=!text_display,type=!tnt,type=!arrow] run function ketket_furnitures:sit/mobsitfunc
+execute as @e[type=interaction,tag=chair,tag=full,tag=furniture] at @s unless entity @e[tag=sitting,distance=..1] run tag @s remove full
 execute as @e[nbt=!{RootVehicle:{}},type=player] at @s run tag @s remove sitting
 
 #----FRİDGE İNTERACTİONS----#
-execute as @e[type=interaction,tag=cabinet1] at @s on target run function ketket_furnitures:interaction/fridge/fridge
+execute as @e[type=interaction,tag=cabinet1,tag=furniture] at @s on target run function ketket_furnitures:interaction/fridge/fridge
 
 #-----SCOREBOARD SET-----#
 #sneaking set
@@ -45,6 +45,5 @@ execute as @e[type=item,nbt={Item:{tag:{carpenterbench:1b}}}] run kill @s
 #click data remover
 execute as @e[type=interaction,tag=furniture,nbt={interaction:{}}] run data remove entity @s interaction
 execute as @e[type=interaction,tag=furniture,nbt={attack:{}}] run data remove entity @s attack
-execute as @e[tag=mustdie] run kill @s
 
 

@@ -1,7 +1,7 @@
-execute positioned ~1 ~ ~ if entity @e[type=interaction,tag=table2,distance=..0.5,tag=main] run tag @s add connecteda
-execute positioned ~ ~ ~-1 if entity @e[type=interaction,tag=table2,distance=..0.5,tag=main] run tag @s add connectedb
-execute positioned ~-1 ~ ~ if entity @e[type=interaction,tag=table2,distance=..0.5,tag=main] run tag @s add connectedc
-execute positioned ~ ~ ~1 if entity @e[type=interaction,tag=table2,distance=..0.5,tag=main] run tag @s add connectedd
+execute positioned ~1 ~ ~ if entity @e[type=interaction,tag=table2,tag=furniture,distance=..0.5,tag=main] run tag @s add connecteda
+execute positioned ~ ~ ~-1 if entity @e[type=interaction,tag=table2,tag=furniture,distance=..0.5,tag=main] run tag @s add connectedb
+execute positioned ~-1 ~ ~ if entity @e[type=interaction,tag=table2,tag=furniture,distance=..0.5,tag=main] run tag @s add connectedc
+execute positioned ~ ~ ~1 if entity @e[type=interaction,tag=table2,tag=furniture,distance=..0.5,tag=main] run tag @s add connectedd
 
 execute as @s[tag=connecteda] at @s run kill @e[tag=a,distance=..1]
 execute as @s[tag=connecteda] at @s positioned ~1 ~ ~ run kill @e[tag=c,distance=..1]
