@@ -229,6 +229,6 @@ execute as @s[y_rotation=-43..43] at @e[tag=chair1,sort=nearest,limit=1,type=ite
 execute as @s[y_rotation=45..135] at @e[tag=chair1,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add west
 
 
-execute as @e[type=item_frame,tag=chair1] at @s run function ketket_furnitures:place/chairs/chair1/detecttype
+execute as @e[type=item_frame,tag=chair1,limit=1] at @s run function ketket_furnitures:place/chairs/chair1/detecttype
 
 #execute unless data entity @s SelectedItem at @s run say hi

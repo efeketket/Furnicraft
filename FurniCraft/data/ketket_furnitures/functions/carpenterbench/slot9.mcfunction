@@ -62,4 +62,4 @@ execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:stripped_warped_stem"}]
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:warped_hyphae"}] run function ketket_furnitures:carpenterbench/menu/warped
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:stripped_warped_hyphae"}] run function ketket_furnitures:carpenterbench/menu/warped
 
-execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:iron_block"}] run function ketket_furnitures:carpenterbench/menu/fridge
+execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:iron_block"}] run function ketket_furnitures:carpenterbench/menu/iron

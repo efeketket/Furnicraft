@@ -222,4 +222,4 @@ execute as @e[type=marker,tag=dttable] at @s run kill @s
 
 execute as @s at @e[type=item_frame,tag=table,distance=..6] run advancement grant @s only ketket_furnitures:adv_handmade
 
-execute as @e[type=item_frame,tag=table] at @s run function ketket_furnitures:place/tables/table2/detecttype
+execute as @e[type=item_frame,tag=table,limit=1] at @s run function ketket_furnitures:place/tables/table2/detecttype

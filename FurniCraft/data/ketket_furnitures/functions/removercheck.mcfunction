@@ -14,3 +14,5 @@ execute as @s[tag=table3] run function ketket_furnitures:remover/tables/table3/r
 
 execute as @s[tag=cabinet1] positioned ~ ~1 ~ run function ketket_furnitures:remover/cabinets/cabinet1/remove
 execute as @s[tag=cabinet2] positioned ~ ~0.48 ~ run function ketket_furnitures:remover/cabinets/cabinet2/remove
+
+execute as @s[tag=mailbox] positioned ~ ~0.20 ~ run function ketket_furnitures:remover/mailbox/checker

@@ -230,7 +230,13 @@ execute as @s[y_rotation=45..135] at @e[tag=cabinet1,sort=nearest,limit=1,type=i
 
 execute as @s at @e[type=item_frame,tag=cabinet1,distance=..6] run advancement grant @s only ketket_furnitures:adv_handmade
 
-execute as @e[type=item_frame,tag=cabinet1,limit=1] at @s if block ~ ~2 ~ minecraft:air run function ketket_furnitures:place/cabinets/cabinet1/place
-execute as @e[type=item_frame,tag=cabinet1] at @s unless block ~ ~2 ~ minecraft:air run setblock ~ ~1 ~ minecraft:air
-execute as @e[type=item_frame,tag=cabinet1] at @s unless block ~ ~2 ~ minecraft:air run loot spawn ~ ~0.2 ~ loot ketket_furnitures:cabinets/cabinet1
-execute as @e[type=item_frame,tag=cabinet1] at @s unless block ~ ~2 ~ minecraft:air run kill @s
+execute as @e[type=item_frame,tag=cabinet1,limit=1] at @s if block ~ ~2 ~ minecraft:air if block ~ ~1 ~ minecraft:player_head{SkullOwner:{Id:[I;1880409202,-1066448133,-1881328290,138784867],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0="}]}}} run function ketket_furnitures:place/cabinets/cabinet1/place
+execute as @e[type=item_frame,tag=cabinet1,limit=1] at @s if block ~ ~2 ~ minecraft:air if block ~ ~1 ~ minecraft:player_wall_head{SkullOwner:{Id:[I;1880409202,-1066448133,-1881328290,138784867],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0="}]}}} run function ketket_furnitures:place/cabinets/cabinet1/place
+
+execute as @e[type=item_frame,tag=cabinet1] at @s if block ~ ~1 ~ minecraft:player_head{SkullOwner:{Id:[I;1880409202,-1066448133,-1881328290,138784867],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0="}]}}} run loot spawn ~ ~0.2 ~ loot ketket_furnitures:cabinets/cabinet1
+execute as @e[type=item_frame,tag=cabinet1] at @s if block ~ ~1 ~ minecraft:player_wall_head{SkullOwner:{Id:[I;1880409202,-1066448133,-1881328290,138784867],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0="}]}}} run loot spawn ~ ~0.2 ~ loot ketket_furnitures:cabinets/cabinet1
+
+execute as @e[type=item_frame,tag=cabinet1] at @s if block ~ ~1 ~ minecraft:player_wall_head{SkullOwner:{Id:[I;1880409202,-1066448133,-1881328290,138784867],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0="}]}}} run setblock ~ ~1 ~ minecraft:air
+execute as @e[type=item_frame,tag=cabinet1] at @s if block ~ ~1 ~ minecraft:player_head{SkullOwner:{Id:[I;1880409202,-1066448133,-1881328290,138784867],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0="}]}}} run setblock ~ ~1 ~ minecraft:air
+
+execute as @e[type=item_frame,tag=cabinet1] at @s run kill @s

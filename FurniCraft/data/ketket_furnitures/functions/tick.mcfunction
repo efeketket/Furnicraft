@@ -12,9 +12,7 @@ execute as @e[type=interaction,tag=cabinet,tag=cabinet2,tag=furniture] at @s if 
 execute as @e[type=interaction,tag=cabinet,tag=cabinet1,tag=furniture] at @s if block ~ ~2 ~ minecraft:air run function ketket_furnitures:removercheck
 execute as @e[type=interaction,tag=table,tag=table3,tag=main,tag=furniture] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
 execute as @e[type=interaction,tag=table,tag=table1,tag=main,tag=furniture] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
-
-
-
+execute as @e[type=interaction,tag=mailbox,tag=furniture] at @s unless block ~ ~1 ~ minecraft:player_head unless block ~ ~1 ~ minecraft:player_wall_head run function ketket_furnitures:remover/mailbox/destroy
 #----CARPENTER BENCH MENU TİCK---#
 execute as @e[type=block_display,tag=benchmain] at @s if entity @e[type=player,distance=..5] run function ketket_furnitures:carpenterbench/menuset
 execute as @e[type=block_display,tag=benchmain] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:remover/carpenterbench
@@ -30,8 +28,13 @@ execute as @e[type=interaction,tag=!full,tag=chair,tag=furniture] at @s if entit
 execute as @e[type=interaction,tag=chair,tag=full,tag=furniture] at @s unless entity @e[tag=sitting,distance=..1] run tag @s remove full
 execute as @e[nbt=!{RootVehicle:{}},type=player] at @s run tag @s remove sitting
 
-#----FRİDGE İNTERACTİONS----#
+#----FRİDGE,MAİLBOX İNTERACTİONS----#
 execute as @e[type=interaction,tag=cabinet1,tag=furniture] at @s on target run function ketket_furnitures:interaction/fridge/fridge
+execute as @e[type=interaction,tag=mailbox] at @s on target run function ketket_furnitures:interaction/mailbox/checker
+
+# mailbox visiblename switch
+execute as @e[tag=mailstorage,type=item_display] at @s if entity @p[distance=..2.5] run data modify entity @s CustomNameVisible set value 1b
+execute as @e[tag=mailstorage,type=item_display] at @s unless entity @p[distance=..2.5] run data modify entity @s CustomNameVisible set value 0b
 
 #-----SCOREBOARD SET-----#
 #sneaking set
