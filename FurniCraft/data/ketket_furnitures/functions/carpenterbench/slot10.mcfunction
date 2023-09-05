@@ -1,3 +1,5 @@
+tag @s add woodmenu
+
 execute if data block ~ ~ ~ Items[{Slot:10b,id:"minecraft:acacia_planks"}] run function ketket_furnitures:carpenterbench/menu/acacia
 execute if data block ~ ~ ~ Items[{Slot:10b,id:"minecraft:acacia_log"}] run function ketket_furnitures:carpenterbench/menu/acacia
 execute if data block ~ ~ ~ Items[{Slot:10b,id:"minecraft:stripped_acacia_log"}] run function ketket_furnitures:carpenterbench/menu/acacia

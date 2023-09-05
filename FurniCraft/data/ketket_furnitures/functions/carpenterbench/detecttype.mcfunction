@@ -14,6 +14,9 @@ execute as @s[tag=woolon9] unless data block ~ ~ ~ Items[{id:"minecraft:white_wo
 execute as @s[tag=woolon10] unless data block ~ ~ ~ Items[{id:"minecraft:white_wool",Slot:10b}] run tag @s remove woolon10
 tag @s add empty
 
+execute as @e[tag=woolon9] unless data block ~ ~ ~ Items[{Slot:10b}] run function ketket_furnitures:carpenterbench/woolmenu
+execute as @e[tag=woolon10] unless data block ~ ~ ~ Items[{Slot:9b}] run function ketket_furnitures:carpenterbench/woolmenu
+
 execute as @s[tag=slot9] at @s run function ketket_furnitures:carpenterbench/slot9
 execute as @s[tag=slot10] at @s run function ketket_furnitures:carpenterbench/slot10
 

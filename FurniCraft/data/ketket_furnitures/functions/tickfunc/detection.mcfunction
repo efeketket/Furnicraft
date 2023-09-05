@@ -57,13 +57,27 @@ execute as @s[tag=placecabinet2,type=player] at @s run function ketket_furniture
 execute as @s[tag=placecabinet2,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/cabinets/cabinet2
 execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{cabinet2:1b}}},tag=placecabinet2] run tag @s remove placecabinet2
 
-
-
 #mailbox
 execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{mailbox:1b}}}] at @s run tag @s add placemailbox
 execute as @s[tag=placemailbox,type=player] at @s run function ketket_furnitures:detections/mailbox
 execute as @s[tag=placemailbox,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/mailbox
 execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{mailbox:1b}}},tag=placemailbox] run tag @s remove placemailbox
+
+#CURTAINS
+#curtain1
+execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{curtain1:1b}}}] at @s run tag @s add placecurtain1
+execute as @s[tag=placecurtain1,type=player] at @s run function ketket_furnitures:detections/curtain/curtain1
+execute as @s[tag=placecurtain1,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/curtain/curtain1
+execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{curtain1:1b}}},tag=placecurtain1] run tag @s remove placecurtain1
+
+#curtain2
+execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{curtain2:1b}}}] at @s run tag @s add placecurtain2
+execute as @s[tag=placecurtain2,type=player] at @s run function ketket_furnitures:detections/curtain/curtain2
+execute as @s[tag=placecurtain2,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/curtain/curtain2
+execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{curtain2:1b}}},tag=placecurtain2] run tag @s remove placecurtain2
+
+
+
 
 #SHOWCASE
 #
@@ -76,3 +90,5 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{carpenterbenchb
 execute as @s[tag=placebench,type=player] at @s run function ketket_furnitures:detections/bench
 execute as @s[tag=placebench,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/bench
 execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{carpenterbenchblock:1b}}},tag=placebench] run tag @s remove placebench
+
+
