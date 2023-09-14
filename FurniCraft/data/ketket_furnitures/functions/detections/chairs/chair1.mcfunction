@@ -230,5 +230,5 @@ execute as @s[y_rotation=45..135] at @e[tag=chair1,sort=nearest,limit=1,type=ite
 
 
 execute as @e[type=item_frame,tag=chair1,limit=1] at @s run function ketket_furnitures:place/chairs/chair1/detecttype
-
+execute as @e[type=item_frame,tag=chair1] run kill @s
 #execute unless data entity @s SelectedItem at @s run say hi

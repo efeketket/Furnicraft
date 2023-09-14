@@ -229,4 +229,5 @@ execute as @s[y_rotation=-133..-45] at @e[tag=cabinet2,sort=nearest,limit=1,type
 execute as @s[y_rotation=-43..43] at @e[tag=cabinet2,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add south
 execute as @s[y_rotation=45..135] at @e[tag=cabinet2,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add west
 
-execute as @e[type=item_frame,tag=cabinet2] at @s run function ketket_furnitures:place/cabinets/cabinet2/detecttype
+execute as @e[type=item_frame,tag=cabinet2,limit=1] at @s run function ketket_furnitures:place/cabinets/cabinet2/detecttype
+execute as @e[type=item_frame,tag=cabinet2] at @s run kill @s

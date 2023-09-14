@@ -228,6 +228,7 @@ execute as @s[y_rotation=-133..-45] at @e[tag=chair3,sort=nearest,limit=1,type=i
 execute as @s[y_rotation=-43..43] at @e[tag=chair3,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add south
 execute as @s[y_rotation=45..135] at @e[tag=chair3,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add west
 
-execute as @e[type=item_frame,tag=chair3] at @s unless data block ~ ~ ~ {SkullOwner:{Id:[I;-2097361313,1024410766,-1135746352,-1925943514],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjNlZWI0NDA0YTIyZTNjNWZiZGQ0ODM2YzcyYTdmNTljMTYxNTU4OGE5YzU3ZDI4NzE1NTQ1MzcyOGFlYSJ9fX0="}]}}} run kill @s
-execute as @e[type=item_frame,tag=chair3,limit=1] at @s run function ketket_furnitures:place/chairs/chair3/chair3
+execute as @e[type=item_frame,tag=chair3,limit=1] at @s if block ~ ~1 ~ minecraft:player_head{SkullOwner:{Id:[I;-2097361313,1024410766,-1135746352,-1925943514],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjNlZWI0NDA0YTIyZTNjNWZiZGQ0ODM2YzcyYTdmNTljMTYxNTU4OGE5YzU3ZDI4NzE1NTQ1MzcyOGFlYSJ9fX0="}]}}} run function ketket_furnitures:place/chairs/chair3/chair3
+execute as @e[type=item_frame,tag=chair3,limit=1] at @s if block ~ ~1 ~ minecraft:player_wall_head{SkullOwner:{Id:[I;-2097361313,1024410766,-1135746352,-1925943514],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjNlZWI0NDA0YTIyZTNjNWZiZGQ0ODM2YzcyYTdmNTljMTYxNTU4OGE5YzU3ZDI4NzE1NTQ1MzcyOGFlYSJ9fX0="}]}}} run function ketket_furnitures:place/chairs/chair3/chair3
 
+execute as @e[type=item_frame,tag=chair3] run kill @s

@@ -1,3 +1,4 @@
+#ITEM CRAFTED
 recipe take @a ketket_furnitures:bench_craft
 advancement revoke @a only ketket_furnitures:craft
 loot give @s loot ketket_furnitures:carpenterbench
