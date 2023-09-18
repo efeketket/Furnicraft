@@ -82,12 +82,18 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{lamp1:1b}}}] at
 execute as @s[tag=placelamp1,type=player] at @s run function ketket_furnitures:detections/lamps/lamp1
 execute as @s[tag=placelamp1,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/lamps/lamp1
 execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{lamp1:1b}}},tag=placelamp1] run tag @s remove placelamp1
+#pole1
+execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{pole1:1b}}}] at @s run tag @s add placepole1
+execute as @s[tag=placepole1,type=player] at @s run function ketket_furnitures:detections/lamps/pole1
+execute as @s[tag=placepole1,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/lamps/pole1
+execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{pole1:1b}}},tag=placepole1] run tag @s remove placepole1
 
 #lamp2
 execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{lamp2:1b}}}] at @s run tag @s add placelamp2
 execute as @s[tag=placelamp2,type=player] at @s run function ketket_furnitures:detections/lamps/lamp2
 execute as @s[tag=placelamp2,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/lamps/lamp2
 execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{lamp2:1b}}},tag=placelamp2] run tag @s remove placelamp2
+
 
 
 #SHOWCASE

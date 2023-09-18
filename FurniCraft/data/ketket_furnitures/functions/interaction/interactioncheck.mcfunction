@@ -1,3 +1,6 @@
+execute unless data entity @s SelectedItem run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=curtain1,distance=..0.5] at @s run function ketket_furnitures:interaction/curtain/switcher
+execute unless data entity @s SelectedItem run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=curtain2,distance=..0.5] at @s run function ketket_furnitures:interaction/curtain/2switch
+
 execute if data entity @s SelectedItem{id:"minecraft:dark_oak_log"} run function ketket_furnitures:interaction/changetype
 execute if data entity @s SelectedItem{id:"minecraft:oak_log"} run function ketket_furnitures:interaction/changetype
 execute if data entity @s SelectedItem{id:"minecraft:acacia_log"} run function ketket_furnitures:interaction/changetype
@@ -44,5 +47,7 @@ execute if data entity @s SelectedItem{id:"minecraft:blue_dye"} positioned ~ ~0.
 execute if data entity @s SelectedItem{id:"minecraft:purple_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
 execute if data entity @s SelectedItem{id:"minecraft:magenta_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
 execute if data entity @s SelectedItem{id:"minecraft:pink_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
+
+
 
 execute as @e[type=interaction,tag=furniture,sort=nearest,limit=1] run data remove entity @s interaction

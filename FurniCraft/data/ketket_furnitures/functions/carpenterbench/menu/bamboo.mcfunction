@@ -1,6 +1,5 @@
-function ketket_furnitures:carpenterbench/menu/checker
-function ketket_furnitures:carpenterbench/empty
 tag @s add this
+tag @s add woodmenu
 loot replace block ~ ~ ~ container.3 loot ketket_furnitures:chairs/chair1/bamboo
 loot replace block ~ ~ ~ container.4 loot ketket_furnitures:chairs/chair2/bamboo
 loot replace block ~ ~ ~ container.5 loot ketket_furnitures:chairs/chair5/bamboo

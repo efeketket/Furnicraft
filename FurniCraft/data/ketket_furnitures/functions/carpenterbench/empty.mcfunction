@@ -13,3 +13,5 @@ loot replace block ~ ~ ~ container.22 loot ketket_furnitures:benchmenu/empty2
 loot replace block ~ ~ ~ container.23 loot ketket_furnitures:benchmenu/empty2
 loot replace block ~ ~ ~ container.24 loot ketket_furnitures:benchmenu/empty2
 loot replace block ~ ~ ~ container.25 loot ketket_furnitures:benchmenu/empty2
+
+execute as @s[tag=empty] run data modify entity @s Tags set value ["bench","benchmain","furniture"]

@@ -4,7 +4,7 @@ execute as @e[type=player,tag=placer] at @s run function ketket_furnitures:tickf
 execute as @e[type=player,nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{furniture:1b}}},tag=placer] run function ketket_furnitures:tickfunc/detection
 execute as @e[type=player,nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{furniture:1b}}}] at @s run tag @s remove placer
 
-#-----AİR REMOVER,CLİCK REMOVER-----#
+#-----CLİCK REMOVER-----#
 execute as @e[type=interaction,tag=furniture,nbt={attack:{}}] at @s run function ketket_furnitures:removercheck
 execute as @e[tag=mustdie,tag=furniture] run kill @s
 
@@ -13,6 +13,9 @@ execute as @e[type=interaction,tag=cabinet,tag=cabinet1,tag=furniture] at @s if 
 execute as @e[type=interaction,tag=table,tag=table3,tag=main,tag=furniture] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
 execute as @e[type=interaction,tag=table,tag=table1,tag=main,tag=furniture] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
 execute as @e[type=interaction,tag=mailbox,tag=furniture] at @s unless block ~ ~1 ~ minecraft:player_head unless block ~ ~1 ~ minecraft:player_wall_head run function ketket_furnitures:remover/mailbox/destroy
+
+execute as @e[type=item_display,tag=main,tag=poleblock,tag=furniture] at @s positioned ~ ~-0.5 ~ if block ~ ~ ~ minecraft:air run function ketket_furnitures:removercheck
+
 #----CARPENTER BENCH MENU TİCK---#
 execute as @e[type=block_display,tag=benchmain] at @s if entity @e[type=player,distance=..5] run function ketket_furnitures:carpenterbench/menuset
 execute as @e[type=block_display,tag=benchmain] at @s if block ~ ~ ~ minecraft:air run function ketket_furnitures:remover/carpenterbench

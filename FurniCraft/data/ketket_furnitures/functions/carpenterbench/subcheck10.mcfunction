@@ -14,6 +14,11 @@ execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:blue_wool"}] run tag @s
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:purple_wool"}] run tag @s add thissub
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:pink_wool"}] run tag @s add thissub
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:magenta_wool"}] run tag @s add thissub
+execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:iron_ingot"}] run tag @s add thissub
+
+execute as @s[tag=!thissub] run tag @s remove slot10
+execute as @s[tag=!thissub] run tag @s add slot9
+execute as @s[tag=!thissub] run tag @s remove subon
 execute as @s[tag=!thissub] run tag @s add this
 
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:white_wool"}] run tag @s add woolon
@@ -32,7 +37,8 @@ execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:blue_wool"}] run tag @s
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:purple_wool"}] run tag @s add woolon
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:pink_wool"}] run tag @s add woolon
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:magenta_wool"}] run tag @s add woolon
+execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:iron_ingot"}] run tag @s add ironon
 
-execute as @s[tag=slot10,tag=thissub] store result score @s woolcount run data get block ~ ~ ~ Items[{Slot:9b}].Count
-execute as @s[tag=slot9,tag=thissub] store result score @s woolcount run data get block ~ ~ ~ Items[{Slot:10b}].Count
+execute as @s[tag=thissub] store result score @s woolcount run data get block ~ ~ ~ Items[{Slot:9b}].Count
+
 

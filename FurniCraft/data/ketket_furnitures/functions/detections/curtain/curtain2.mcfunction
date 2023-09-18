@@ -2,6 +2,8 @@ execute as @s[x_rotation=60..90] run summon minecraft:marker ^ ^0.4 ^0 {Tags:["d
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
@@ -10,6 +12,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=60..90] run summon minecraft:marker ^ ^0.5 ^2 {Tags:["dtcurtain","3","curtain"]} 
@@ -17,6 +21,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=60..90] run summon minecraft:marker ^ ^0.5 ^3 {Tags:["dtcurtain","4","curtain"]} 
@@ -24,6 +30,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=60..90] run summon minecraft:marker ^ ^0.6 ^4 {Tags:["dtcurtain","5","curtain"]} 
@@ -31,6 +39,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=60..90] run summon minecraft:marker ^ ^0.6 ^5 {Tags:["dtcurtain","6","curtain"]} 
@@ -38,6 +48,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 
@@ -48,6 +60,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=50..60] run summon minecraft:marker ^ ^0.9 ^1.2 {Tags:["dtcurtain","8","curtain"]} 
@@ -55,6 +69,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=50..60] run summon minecraft:marker ^ ^0.9 ^2.2 {Tags:["dtcurtain","9","curtain"]} 
@@ -62,6 +78,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=50..60] run summon minecraft:marker ^ ^0.9 ^3.2 {Tags:["dtcurtain","10","curtain"]} 
@@ -69,6 +87,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=50..60] run summon minecraft:marker ^ ^0.9 ^4.2 {Tags:["dtcurtain","11","curtain"]} 
@@ -76,6 +96,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=50..60] run summon minecraft:marker ^ ^0.9 ^5.2 {Tags:["dtcurtain","12","curtain"]} 
@@ -83,6 +105,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 
@@ -93,6 +117,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-50..50] run summon minecraft:marker ^ ^1.5 ^1 {Tags:["dtcurtain","14","curtain"]} 
@@ -100,6 +126,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-50..50] run summon minecraft:marker ^ ^1.8 ^2 {Tags:["dtcurtain","15","curtain"]} 
@@ -107,6 +135,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-50..50] run summon minecraft:marker ^ ^1.8 ^3 {Tags:["dtcurtain","16","curtain"]} 
@@ -114,6 +144,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-50..50] run summon minecraft:marker ^ ^1.9 ^4 {Tags:["dtcurtain","17","curtain"]} 
@@ -121,6 +153,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-50..50] run summon minecraft:marker ^ ^1.9 ^5 {Tags:["dtcurtain","18","curtain"]} 
@@ -128,6 +162,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 
@@ -138,6 +174,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-60..-50] run summon minecraft:marker ^ ^1.5 ^1 {Tags:["dtcurtain","20","curtain"]} 
@@ -145,6 +183,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-60..-50] run summon minecraft:marker ^ ^1.6 ^2 {Tags:["dtcurtain","21","curtain"]} 
@@ -152,6 +192,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-60..-50] run summon minecraft:marker ^ ^1.6 ^3 {Tags:["dtcurtain","22","curtain"]} 
@@ -159,6 +201,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-60..-50] run summon minecraft:marker ^ ^1.7 ^4 {Tags:["dtcurtain","23","curtain"]} 
@@ -166,6 +210,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-60..-50] run summon minecraft:marker ^ ^1.7 ^5 {Tags:["dtcurtain","24","curtain"]} 
@@ -173,6 +219,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 
@@ -183,6 +231,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-90..-60] run summon minecraft:marker ^ ^0.4 ^1 {Tags:["dtcurtain","26","curtain"]} 
@@ -190,6 +240,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-90..-60] run summon minecraft:marker ^0.2 ^0.5 ^2 {Tags:["dtcurtain","27","curtain"]} 
@@ -197,6 +249,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-90..-60] run summon minecraft:marker ^0.2 ^0.5 ^3 {Tags:["dtcurtain","28","curtain"]} 
@@ -204,6 +258,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-90..-60] run summon minecraft:marker ^0.4 ^0.6 ^4 {Tags:["dtcurtain","29","curtain"]} 
@@ -211,6 +267,8 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
 
 execute as @s[x_rotation=-90..-60] run summon minecraft:marker ^0.4 ^0.6 ^5 {Tags:["dtcurtain","30","curtain"]} 
@@ -218,18 +276,18 @@ execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
+execute as @e[type=marker,tag=dtcurtain,tag=curtain] at @s positioned ~ ~-1 ~ if block ~ ~ ~ player_wall_head run summon minecraft:item_frame ~ ~-1 ~ {Tags:["curtain"]}
 execute as @e[type=marker,tag=dtcurtain] at @s run kill @s
-
 
 execute as @s at @e[type=item_frame,tag=curtain,distance=..6] run advancement grant @s only ketket_furnitures:adv_handmade
 
 execute as @s[y_rotation=136..225] at @e[tag=curtain,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add north
-execute as @s[y_rotation=-133..-45] at @e[tag=curtain,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add east
-execute as @s[y_rotation=-43..43] at @e[tag=curtain,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add south
+execute as @s[y_rotation=-134..-45] at @e[tag=curtain,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add east
+execute as @s[y_rotation=-44..44] at @e[tag=curtain,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add south
 execute as @s[y_rotation=45..135] at @e[tag=curtain,sort=nearest,limit=1,type=item_frame] run tag @e[type=item_frame,limit=1,sort=nearest,distance=..0.5] add west
 
 
-execute as @e[type=item_frame,tag=curtain,limit=1] at @s if block ~ ~1 ~ minecraft:player_head{SkullOwner:{Id:[I;1306959352,762679376,-1996554493,-2081790520],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY0NmE2MmZlYzJkZDk3ZjVlNGFhMzI5YWU0NDZjNjAxMWE4ZThlMmQ4MTdhZWViOGZkYzExY2M1NGVjMmViZSJ9fX0="}]}}} run function ketket_furnitures:place/curtains/curtain
-execute as @e[type=item_frame,tag=curtain,limit=1] at @s if block ~ ~1 ~ minecraft:player_wall_head{SkullOwner:{Id:[I;1306959352,762679376,-1996554493,-2081790520],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY0NmE2MmZlYzJkZDk3ZjVlNGFhMzI5YWU0NDZjNjAxMWE4ZThlMmQ4MTdhZWViOGZkYzExY2M1NGVjMmViZSJ9fX0="}]}}} run function ketket_furnitures:place/curtains/curtain
+execute as @e[type=item_frame,tag=curtain,limit=1] at @s if data block ~ ~1 ~ {SkullOwner:{Id:[I;1306959352,762679376,-1996554493,-2081790520],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY0NmE2MmZlYzJkZDk3ZjVlNGFhMzI5YWU0NDZjNjAxMWE4ZThlMmQ4MTdhZWViOGZkYzExY2M1NGVjMmViZSJ9fX0="}]}}} run function ketket_furnitures:place/curtains/curtain2
+
 execute as @e[type=item_frame,tag=curtain] run kill @s
-#execute unless data entity @s SelectedItem at @s run say hi
