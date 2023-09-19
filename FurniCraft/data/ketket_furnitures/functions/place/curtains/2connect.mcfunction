@@ -22,7 +22,7 @@ execute as @s[tag=south] positioned ~1 ~ ~ if entity @e[type=interaction,tag=cur
 execute as @s[tag=north] positioned ~-1 ~ ~ if entity @e[type=interaction,tag=curtain2,distance=..0.5,tag=north] run kill @e[tag=right,tag=curtain2,distance=..0.7,tag=north]
 execute as @s[tag=north] positioned ~-1 ~ ~ if entity @e[type=interaction,tag=curtain2,distance=..0.5,tag=north] positioned ~1 ~ ~ run kill @e[tag=left,tag=curtain2,distance=..0.7,tag=north]
 execute as @s[tag=north] positioned ~1 ~ ~ if entity @e[type=interaction,tag=curtain2,distance=..0.5,tag=north] run kill @e[tag=left,tag=curtain2,distance=..0.7,tag=north]
-execute as @s[tag=north] positioned ~-1 ~ ~ if entity @e[type=interaction,tag=curtain2,distance=..0.5,tag=north] positioned ~-1 ~ ~ run kill @e[tag=right,tag=curtain2,distance=..0.7,tag=north]
+execute as @s[tag=north] positioned ~1 ~ ~ if entity @e[type=interaction,tag=curtain2,distance=..0.5,tag=north] positioned ~-1 ~ ~ run kill @e[tag=right,tag=curtain2,distance=..0.7,tag=north]
 
 
 execute as @s[tag=east] positioned ~ ~ ~1 if entity @e[type=interaction,tag=curtain2,distance=..0.5,tag=east] run kill @e[tag=left,tag=curtain2,distance=..0.7,tag=east]
