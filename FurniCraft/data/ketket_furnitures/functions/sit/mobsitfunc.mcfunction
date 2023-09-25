@@ -1,5 +1,4 @@
-execute as @s[tag=!full] at @s run ride @e[distance=..2,sort=nearest,limit=1,type=!interaction,type=!item,type=!block_display,type=!armor_stand,type=!item_frame,type=!player,type=!experience_orb,type=!item_display,type=!#arrows,type=!area_effect_cloud,type=!dragon_fireball,type=!end_crystal,type=!ender_pearl,type=!evoker_fangs,type=!eye_of_ender,type=!falling_block,type=!fireball,type=!firework_rocket,type=!glow_item_frame,type=!leash_knot,type=!lightning_bolt,type=!llama_spit,type=!marker,type=!painting,type=!small_fireball,type=!text_display,type=!tnt,type=!arrow] mount @e[tag=sitable,sort=nearest,limit=1]
-execute as @s[tag=!full] at @s run tag @e[distance=..2,sort=nearest,limit=1,type=!interaction,type=!item,type=!block_display,type=!armor_stand,type=!item_frame,type=!player,type=!experience_orb,type=!item_display,type=!#arrows,type=!area_effect_cloud,type=!dragon_fireball,type=!end_crystal,type=!ender_pearl,type=!evoker_fangs,type=!eye_of_ender,type=!falling_block,type=!fireball,type=!firework_rocket,type=!glow_item_frame,type=!leash_knot,type=!lightning_bolt,type=!llama_spit,type=!marker,type=!painting,type=!small_fireball,type=!text_display,type=!tnt,type=!arrow] add sitting
-execute as @e[tag=sitting,sort=nearest,limit=1] at @s run tag @e[type=interaction,sort=nearest,limit=1,distance=..0.2,tag=!full] add full
-execute as @e[type=interaction,tag=!full,tag=chair] at @s if entity @e[distance=..1,type=!interaction,type=!item,type=!block_display,type=!armor_stand,type=!item_frame,type=!player] run tag @s add full
+ride @e[tag=sitting,limit=1,distance=..2,sort=nearest] mount @e[tag=sitable,sort=nearest,limit=1]
+tag @s add full
+
 
