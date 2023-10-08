@@ -102,6 +102,34 @@ execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{lamp2:1b}}},ta
 #
 #
 
+#DOOR
+#door1
+execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{door1:1b}}}] at @s run tag @s add placedoor1
+execute as @s[tag=placedoor1,type=player] at @s run function ketket_furnitures:detections/doors/door1
+execute as @s[tag=placedoor1,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/doors/door1
+execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{door1:1b}}},tag=placedoor1] run tag @s remove placedoor1
+
+#door2
+execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{door2:1b}}}] at @s run tag @s add placedoor2
+execute as @s[tag=placedoor2,type=player] at @s run function ketket_furnitures:detections/doors/door2
+execute as @s[tag=placedoor2,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/doors/door2
+execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{door2:1b}}},tag=placedoor2] run tag @s remove placedoor2
+
+
+#BED
+#bed1
+execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{bed1:1b}}}] at @s run tag @s add placebed1
+execute as @s[tag=placebed1,type=player] at @s run function ketket_furnitures:detections/beds/bed1
+execute as @s[tag=placebed1,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/beds/bed1
+execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{bed1:1b}}},tag=placebed1] run tag @s remove placebed1
+
+#bed2
+execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{bed2:1b}}}] at @s run tag @s add placebed2
+execute as @s[tag=placebed2,type=player] at @s run function ketket_furnitures:detections/beds/bed2
+execute as @s[tag=placebed2,type=player] at @s unless data entity @s SelectedItem run function ketket_furnitures:detections/beds/bed2
+execute as @s[nbt=!{SelectedItem:{id:"minecraft:player_head",tag:{bed2:1b}}},tag=placebed2] run tag @s remove placebed2
+
+
 #CARPENTER BENCH
 execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{carpenterbenchblock:1b}}}] at @s run tag @s add placebench
 execute as @s[tag=placebench,type=player] at @s run function ketket_furnitures:detections/bench
