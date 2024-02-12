@@ -12,7 +12,7 @@ execute as @s[tag=west] at @s run summon minecraft:block_display ~ ~1 ~ {id:"blo
 execute as @s[tag=west] at @s run summon minecraft:interaction ~ ~0.3 ~ {Tags: ["warped","chair","chair5","furniture","west"],width:0.83,height:0.60,}
 
 
-summon minecraft:block_display ~ ~0.43 ~ {Tags:["sitable","chair","chair5"],block_state:{Name:"minecraft:air"},interpolation_duration:0,start_interpolation:0,transformation:[0.300f, 0.000f, 0.000f,-0.150f,0.000f, 0.300f, 0.000f,-1.600f,0.000f, 0.000f, 0.300f,-0.150f,0.000f, 0.000f, 0.000f,1.000f],view_range:0.15f,shadow_radius:0f,shadow_strength:0f}
+summon minecraft:block_display ~ ~0.63 ~ {Tags:["sitable","chair","chair5"],block_state:{Name:"minecraft:air"},interpolation_duration:0,start_interpolation:0,transformation:[0.300f, 0.000f, 0.000f,-0.150f,0.000f, 0.300f, 0.000f,-1.600f,0.000f, 0.000f, 0.300f,-0.150f,0.000f, 0.000f, 0.000f,1.000f],view_range:0.15f,shadow_radius:0f,shadow_strength:0f}
 
 execute as @e[tag=chair,distance=..1] at @s run data modify entity @s view_range merge value 0.30f
 execute as @e[type=interaction,tag=chair5,sort=nearest,limit=1] at @s run function ketket_furnitures:place/chairs/chair5/connect

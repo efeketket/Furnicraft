@@ -1,4 +1,4 @@
-execute as @s at @s run summon minecraft:block_display ~ ~0.45 ~ {Tags:["sitable","chairs","chair3"],block_state:{Name:"minecraft:air"},interpolation_duration:0,start_interpolation:0,transformation:[0.300f, 0.000f, 0.000f,-0.150f,0.000f, 0.300f, 0.000f,-1.450f,0.000f, 0.000f, 0.300f,-0.150f,0.000f, 0.000f, 0.000f,1.000f],view_range:0.15f,shadow_radius:0f,shadow_strength:0f,Passengers:[]}
+execute as @s at @s run summon minecraft:block_display ~ ~0.65 ~ {Tags:["sitable","chairs","chair3"],block_state:{Name:"minecraft:air"},interpolation_duration:0,start_interpolation:0,transformation:[0.300f, 0.000f, 0.000f,-0.150f,0.000f, 0.300f, 0.000f,-1.450f,0.000f, 0.000f, 0.300f,-0.150f,0.000f, 0.000f, 0.000f,1.000f],view_range:0.15f,shadow_radius:0f,shadow_strength:0f,Passengers:[]}
 
 execute as @s[tag=north] at @s run summon minecraft:interaction ~ ~0.3 ~ {Tags: ["chair","chair3","north","furniture"],width:1,height:0.70}
 execute as @s[tag=east] at @s run summon minecraft:interaction ~ ~0.3 ~ {Tags: ["chair","chair3","east","furniture"],width:1,height:0.70}
