@@ -52,9 +52,9 @@ execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=planks] 
 execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=plank] at @s run data modify entity @s block_state.Name set from storage logholder Plank.Name
 execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=wood] at @s run data modify entity @s block_state.Name set from storage logholder Wood.Name
 
-execute as @s if entity @e[type=interaction,sort=nearest,limit=1,tag=chair,distance=..0.1] run function ketket_furnitures:interaction/tag/chairtag
-execute as @s if entity @e[type=interaction,sort=nearest,limit=1,tag=table,distance=..0.1] run function ketket_furnitures:interaction/tag/tabletag
-execute as @s if entity @e[type=interaction,sort=nearest,limit=1,tag=cabinet2,distance=..0.3] run function ketket_furnitures:interaction/tag/cabinettag
+execute as @s if entity @e[type=interaction,sort=nearest,limit=1,tag=chair] run function ketket_furnitures:interaction/tag/chairtag
+execute as @s if entity @e[type=interaction,sort=nearest,limit=1,tag=table] run function ketket_furnitures:interaction/tag/tabletag
+execute as @s if entity @e[type=interaction,sort=nearest,limit=1,tag=cabinet2] run function ketket_furnitures:interaction/tag/cabinettag
 playsound minecraft:block.wood.break ambient @s ~ ~ ~ 1
 
 

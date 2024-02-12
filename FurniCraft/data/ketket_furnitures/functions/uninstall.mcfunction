@@ -6,8 +6,7 @@ scoreboard objectives remove fc.switcher
 
 execute as @e[tag=benchmain] at @s run setblock ~ ~ ~ minecraft:air 
 execute as @e[type=interaction,tag=furniture,tag=!cabinet1] at @s run setblock ~ ~ ~ minecraft:air
-execute as @e[type=interaction,tag=furniture,tag=cabinet1] at @s run setblock ~ ~1 ~ minecraft:air
-execute as @e[type=interaction,tag=furniture,tag=cabinet1] at @s run setblock ~ ~2 ~ minecraft:air
+execute as @e[type=interaction,tag=furniture,tag=cabinet1] at @s run fill ~ ~1 ~ ~ ~2 ~ minecraft:air
 
 kill @e[tag=plank,type=block_display]
 kill @e[tag=planks,type=block_display]

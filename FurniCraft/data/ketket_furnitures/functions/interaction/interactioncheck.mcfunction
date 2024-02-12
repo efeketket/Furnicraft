@@ -1,5 +1,5 @@
-execute unless data entity @s SelectedItem run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=curtain1,distance=..0.5] at @s run function ketket_furnitures:interaction/curtain/switcher
-execute unless data entity @s SelectedItem run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=curtain2,distance=..0.5] at @s run function ketket_furnitures:interaction/curtain/2switch
+execute unless data entity @s SelectedItem run execute as @e[type=interaction,limit=1,sort=nearest,tag=curtain1] at @s run function ketket_furnitures:interaction/curtain/switcher
+execute unless data entity @s SelectedItem run execute as @e[type=interaction,limit=1,sort=nearest,tag=curtain2] at @s run function ketket_furnitures:interaction/curtain/2switch
 
 execute if data entity @s SelectedItem{id:"minecraft:dark_oak_log"} run function ketket_furnitures:interaction/changetype
 execute if data entity @s SelectedItem{id:"minecraft:oak_log"} run function ketket_furnitures:interaction/changetype
@@ -24,12 +24,12 @@ execute if data entity @s SelectedItem{id:"minecraft:stripped_mangrove_log"} run
 execute if data entity @s SelectedItem{id:"minecraft:stripped_spruce_log"} run function ketket_furnitures:interaction/changetype
 execute if data entity @s SelectedItem{id:"minecraft:stripped_warped_stem"} run function ketket_furnitures:interaction/changetype
 
-execute if data entity @s SelectedItem{id:"minecraft:wooden_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=!stripped,distance=..0.3] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
-execute if data entity @s SelectedItem{id:"minecraft:iron_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=!stripped,distance=..0.3] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
-execute if data entity @s SelectedItem{id:"minecraft:stone_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=!stripped,distance=..0.3] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
-execute if data entity @s SelectedItem{id:"minecraft:golden_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=!stripped,distance=..0.3] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
-execute if data entity @s SelectedItem{id:"minecraft:diamond_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=!stripped,distance=..0.3] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
-execute if data entity @s SelectedItem{id:"minecraft:netherite_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=furniture,tag=!stripped,distance=..0.3] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
+execute if data entity @s SelectedItem{id:"minecraft:wooden_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=!stripped] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
+execute if data entity @s SelectedItem{id:"minecraft:iron_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=!stripped] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
+execute if data entity @s SelectedItem{id:"minecraft:stone_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=!stripped] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
+execute if data entity @s SelectedItem{id:"minecraft:golden_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=!stripped] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
+execute if data entity @s SelectedItem{id:"minecraft:diamond_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=!stripped] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
+execute if data entity @s SelectedItem{id:"minecraft:netherite_axe"} run execute as @e[type=interaction,limit=1,sort=nearest,tag=!stripped] positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/strip
 
 execute if data entity @s SelectedItem{id:"minecraft:red_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
 execute if data entity @s SelectedItem{id:"minecraft:white_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
@@ -48,6 +48,4 @@ execute if data entity @s SelectedItem{id:"minecraft:purple_dye"} positioned ~ ~
 execute if data entity @s SelectedItem{id:"minecraft:magenta_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
 execute if data entity @s SelectedItem{id:"minecraft:pink_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
 
-
-
-execute as @e[type=interaction,tag=furniture,sort=nearest,limit=1] run data remove entity @s interaction
+execute as @e[type=interaction,sort=nearest,limit=1] run data remove entity @s interaction
