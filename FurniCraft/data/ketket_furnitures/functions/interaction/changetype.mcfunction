@@ -47,16 +47,12 @@ execute if data entity @s SelectedItem{id:"minecraft:stripped_mangrove_log"} run
 execute if data entity @s SelectedItem{id:"minecraft:stripped_spruce_log"} run execute run data modify storage logholder Wood.Name set value "stripped_spruce_wood"
 execute if data entity @s SelectedItem{id:"minecraft:stripped_warped_stem"} run execute run data modify storage logholder Wood.Name set value "stripped_warped_hyphae"
 
-execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=log] at @s run data modify entity @s block_state.Name set from storage logholder Log.Name
-execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=planks] at @s run data modify entity @s block_state.Name set from storage logholder Plank.Name
-execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=plank] at @s run data modify entity @s block_state.Name set from storage logholder Plank.Name
-execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=wood] at @s run data modify entity @s block_state.Name set from storage logholder Wood.Name
+execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=log] run data modify entity @s block_state.Name set from storage logholder Log.Name
+execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=planks] run data modify entity @s block_state.Name set from storage logholder Plank.Name
+execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=plank] run data modify entity @s block_state.Name set from storage logholder Plank.Name
+execute positioned ~ ~0.5 ~ as @e[type=block_display,distance=..0.5,tag=wood] run data modify entity @s block_state.Name set from storage logholder Wood.Name
 
 execute as @s if entity @e[type=interaction,sort=nearest,limit=1,tag=chair] run function ketket_furnitures:interaction/tag/chairtag
 execute as @s if entity @e[type=interaction,sort=nearest,limit=1,tag=table] run function ketket_furnitures:interaction/tag/tabletag
 execute as @s if entity @e[type=interaction,sort=nearest,limit=1,tag=cabinet2] run function ketket_furnitures:interaction/tag/cabinettag
 playsound minecraft:block.wood.break ambient @s ~ ~ ~ 1
-
-
-
-execute as @e[type=interaction,tag=chair,sort=nearest,limit=1] run data remove entity @s interaction

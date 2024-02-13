@@ -47,5 +47,3 @@ execute if data entity @s SelectedItem{id:"minecraft:blue_dye"} positioned ~ ~0.
 execute if data entity @s SelectedItem{id:"minecraft:purple_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
 execute if data entity @s SelectedItem{id:"minecraft:magenta_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
 execute if data entity @s SelectedItem{id:"minecraft:pink_dye"} positioned ~ ~0.5 ~ run function ketket_furnitures:interaction/dye
-
-execute as @e[type=interaction,sort=nearest,limit=1] run data remove entity @s interaction

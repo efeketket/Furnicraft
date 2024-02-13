@@ -1,5 +1,3 @@
-ride @s mount @e[tag=sitable,limit=1,sort=nearest]
+ride @s mount @e[type=block_display,tag=sitable,limit=1,sort=nearest]
 tag @s add sitting
-tag @e[type=interaction,tag=chair,sort=nearest,limit=1,distance=..1] add full
-
-execute as @e[type=interaction,tag=chair,tag=full] run data remove entity @s interaction
+tag @e[type=interaction,distance=..1,tag=chair,sort=nearest,limit=1] add full

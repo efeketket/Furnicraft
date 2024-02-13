@@ -14,4 +14,3 @@ execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter ma
 execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 5 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value '{"text":"5 New Mail!"}'
 
 execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 1..5 run item replace entity @s weapon.mainhand with air
-execute as @e[type=interaction,nbt={interaction:{}},sort=nearest,limit=1] run data remove entity @s interaction
