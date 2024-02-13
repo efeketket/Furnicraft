@@ -1,6 +1,6 @@
 tag @s add mustdie
 execute on attacker run execute as @s[gamemode=!creative] run tag @e[type=interaction,sort=nearest,limit=1,tag=mustdie] add dropitem
-
+execute as @s[tag=blockchecker] if entity @p[gamemode=!creative] run tag @s add dropitem
 execute as @s[tag=chair] run kill @e[tag=sitable,sort=nearest,limit=1]
 execute as @s[tag=chair1] positioned ~ ~0.5 ~ run function ketket_furnitures:remover/chairs/chair1/remove
 execute as @s[tag=chair2] positioned ~ ~0.7 ~ run function ketket_furnitures:remover/chairs/chair2/remove
