@@ -1,3 +1,3 @@
-tag @e[sort=nearest,distance=..2,limit=1,type=!interaction,type=!item,type=!block_display,type=!armor_stand,type=!item_frame,type=!player,type=!experience_orb,type=!item_display,type=!#arrows,type=!area_effect_cloud,type=!dragon_fireball,type=!end_crystal,type=!ender_pearl,type=!evoker_fangs,type=!eye_of_ender,type=!falling_block,type=!fireball,type=!firework_rocket,type=!glow_item_frame,type=!leash_knot,type=!lightning_bolt,type=!llama_spit,type=!marker,type=!painting,type=!small_fireball,type=!text_display,type=!tnt,type=!arrow,tag=!sitting] add sitting
+tag @e[type=!#ketket_furnitures:cantsit,type=!#minecraft:arrows,sort=nearest,distance=..2,limit=1,tag=!sitting] add sitting
 execute if entity @e[distance=..3,tag=sitting,type=!player] run function ketket_furnitures:sit/mobsitfunc
 
