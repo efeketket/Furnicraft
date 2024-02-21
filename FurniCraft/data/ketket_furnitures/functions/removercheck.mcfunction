@@ -24,4 +24,6 @@ execute as @s[tag=curtain2] positioned ~ ~ ~ run function ketket_furnitures:remo
 
 execute as @s[tag=mailbox] positioned ~ ~0.20 ~ run function ketket_furnitures:remover/mailbox/checker
 
+execute as @s[tag=benchmain] if block ~ ~ ~ minecraft:air run function ketket_furnitures:remover/carpenterbench
+
 kill @s

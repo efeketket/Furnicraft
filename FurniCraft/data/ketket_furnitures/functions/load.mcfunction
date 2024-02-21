@@ -12,3 +12,4 @@ execute as @e[tag=furniture,type=interaction,tag=cabinet1] run tag @s add blockc
 execute as @e[tag=furniture,type=interaction,tag=cabinet2] run tag @s add blockchecker
 execute as @e[tag=furniture,type=interaction,tag=mailbox] run tag @s add blockchecker
 execute as @e[tag=furniture,type=block_display,tag=poleblock] run tag @s add blockchecker
+execute as @e[tag=furniture,type=block_display,tag=benchmain] run tag @s add blockchecker

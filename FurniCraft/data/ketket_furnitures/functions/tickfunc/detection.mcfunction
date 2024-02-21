@@ -1,5 +1,5 @@
 #CARPENTER BENCH
-execute as @s[nbt={SelectedItem:{tag:{carpenterbenchblock:1b}}}] at @s run tag @s add placebench
+tag @s[nbt={SelectedItem:{tag:{carpenterbenchblock:1b}}}] add placebench
 execute as @s[tag=placebench] run function ketket_furnitures:tickfunc/carpenterbench
 
 #CHAİRS

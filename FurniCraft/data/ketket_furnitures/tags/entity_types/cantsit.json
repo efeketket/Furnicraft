@@ -36,7 +36,8 @@
         "minecraft:fishing_bobber",
         "minecraft:egg",
         "minecraft:shulker_bullet",
-        "minecraft:trident"
+        "minecraft:trident",
+        "#minecraft:arrows"
     ]
 }
 
