@@ -5,10 +5,11 @@ execute as @e[type=player,tag=placer] at @s run function ketket_furnitures:place
 ##> click checker
 execute as @e[type=interaction,tag=furniture,nbt={attack:{}}] at @s run function ketket_furnitures:click/left
 execute as @e[type=interaction,tag=furniture,nbt={interaction:{}}] at @s run function ketket_furnitures:click/right
+
 ##> cb checker
-#execute as @e[type=block_display,tag=benchmain] at @s if entity @e[type=player,distance=..5] run function ketket_furnitures:carpenterbench/tick
-execute as @e[type=block_display,tag=benchmain] at @s if data block ~ ~ ~ Items[{Slot:9b}] run function ketket_furnitures:carpenterbench/tick
-execute as @e[type=block_display,tag=benchmain,tag=!enabled] at @s if data block ~ ~ ~ Items[{Slot:10b}] run function ketket_furnitures:carpenterbench/tick
+execute as @e[type=block_display,tag=benchmain] at @s if entity @e[type=player,distance=..6,scores={fc.bench_triggered=1}] run tag @s add enabled
+execute as @e[type=block_display,tag=benchmain,tag=enabled] at @s run function ketket_furnitures:carpenterbench/tick
+
 ##> block checker
 execute as @e[type=#ketket_furnitures:blockcheckers,tag=blockchecker] at @s run function ketket_furnitures:tickfunc/blockchecker
 
@@ -19,6 +20,7 @@ execute as @e[type=!#ketket_furnitures:cantsit,tag=sitting] at @s unless entity 
 
 ##> default sets
 scoreboard players set @e[type=player,scores={Sneaking_ch=1..}] Sneaking_ch 0
+scoreboard players set @e[type=player,scores={fc.bench_triggered=1..}] fc.bench_triggered 0
 execute as @e[type=player,nbt={Inventory:[{tag:{carpenterbench:1b}}]}] run function ketket_furnitures:clearitems
 execute as @e[type=item,nbt={Item:{tag:{carpenterbench:1b}}}] run kill @s
 
