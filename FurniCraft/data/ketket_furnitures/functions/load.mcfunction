@@ -16,4 +16,4 @@ execute as @e[tag=furniture,type=block_display,tag=poleblock] run tag @s add blo
 execute as @e[tag=furniture,type=block_display,tag=benchmain] run tag @s add blockchecker
 
 #> carpenterbench block update
-execute as @e[tag=furniture,type=block_display,tag=benchmain] if block ~ ~ ~ minecraft:chest run setblock ~ ~ ~ minecraft:trapped_chest replace
+execute as @e[tag=furniture,type=block_display,tag=benchmain] at @s if block ~ ~ ~ minecraft:chest run setblock ~ ~ ~ minecraft:trapped_chest{CustomName:'[{"text":"Carpenter Bench"}]'} replace 
