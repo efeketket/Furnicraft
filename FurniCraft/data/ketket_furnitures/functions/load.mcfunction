@@ -6,6 +6,8 @@ scoreboard objectives add mailstoragecounter dummy
 scoreboard objectives add fc.switcher dummy
 scoreboard objectives add fc.bench_triggered minecraft.custom:trigger_trapped_chest
 
+execute as @e[tag=sitting] run tag @s remove sitting
+
 #> tag update
 execute as @e[tag=furniture,type=interaction,tag=main,tag=table1] run tag @s add blockchecker
 execute as @e[tag=furniture,type=interaction,tag=main,tag=table3] run tag @s add blockchecker
