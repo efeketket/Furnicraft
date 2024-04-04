@@ -1,6 +1,6 @@
 ##> click checker
-execute as @s[type=interaction,tag=furniture,nbt={attack:{}}] run function ketket_furnitures:click/left
-execute as @s[type=interaction,tag=furniture,nbt={interaction:{}}] run function ketket_furnitures:click/right
+execute as @s[type=interaction,nbt={attack:{}}] run function ketket_furnitures:click/left
+execute as @s[type=interaction,nbt={interaction:{}}] run function ketket_furnitures:click/right
 
 ##> cb checker
 execute as @s[type=block_display,tag=benchmain] if entity @e[type=player,distance=..6,scores={fc.bench_triggered=1}] run tag @s add enabled
