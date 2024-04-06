@@ -12,8 +12,8 @@ execute as @s[tag=table1] run function ketket_furnitures:remover/tables/table1/r
 execute as @s[tag=table2] positioned ~ ~0.7 ~ run function ketket_furnitures:remover/tables/table2/remove
 execute as @s[tag=table3] run function ketket_furnitures:remover/tables/table3/remove
 
-execute as @s[tag=cabinet1] positioned ~ ~1 ~ run function ketket_furnitures:remover/cabinets/cabinet1/remove
-execute as @s[tag=cabinet2] positioned ~ ~0.48 ~ run function ketket_furnitures:remover/cabinets/cabinet2/remove
+execute as @s[tag=cabinet1,tag=!break] positioned ~ ~1 ~ run function ketket_furnitures:remover/cabinets/cabinet1/remove
+execute as @s[tag=cabinet2,tag=!break] positioned ~ ~0.48 ~ run function ketket_furnitures:remover/cabinets/cabinet2/remove
 
 execute as @s[tag=poleblock] positioned ~ ~-0.5 ~ run function ketket_furnitures:remover/lamps/lamp1/pole1
 execute as @s[tag=lamp1] positioned ~ ~1 ~ run function ketket_furnitures:remover/lamps/lamp1/lamp1
