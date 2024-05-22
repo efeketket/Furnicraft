@@ -1,0 +1,15 @@
+execute unless data block ~ ~ ~ Items[{Slot:3b}] run loot replace block ~ ~ ~ container.3 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:4b}] run loot replace block ~ ~ ~ container.4 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:5b}] run loot replace block ~ ~ ~ container.5 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:6b}] run loot replace block ~ ~ ~ container.6 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:7b}] run loot replace block ~ ~ ~ container.7 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:12b}] run loot replace block ~ ~ ~ container.12 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:13b}] run loot replace block ~ ~ ~ container.13 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:14b}] run loot replace block ~ ~ ~ container.14 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:15b}] run loot replace block ~ ~ ~ container.15 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:16b}] run loot replace block ~ ~ ~ container.16 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:21b}] run loot replace block ~ ~ ~ container.21 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:22b}] run loot replace block ~ ~ ~ container.22 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:23b}] run loot replace block ~ ~ ~ container.23 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:24b}] run loot replace block ~ ~ ~ container.24 loot ketket_furnitures:benchmenu/empty2
+execute unless data block ~ ~ ~ Items[{Slot:25b}] run loot replace block ~ ~ ~ container.25 loot ketket_furnitures:benchmenu/empty2

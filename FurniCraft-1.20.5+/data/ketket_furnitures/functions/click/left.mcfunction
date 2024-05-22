@@ -1,0 +1,1 @@
+function ketket_furnitures:removercheck
