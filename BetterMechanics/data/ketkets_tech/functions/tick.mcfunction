@@ -1,1 +1,0 @@
-execute as @e[type=tnt,nbt={Fuse:3s}] at @s run function ketkets_tech:fusetriggered
