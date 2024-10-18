@@ -1,3 +1,0 @@
-scoreboard objectives add Sneaking_scp minecraft.custom:minecraft.sneak_time
-scoreboard objectives add Lockswitch_scp dummy
-scoreboard objectives add fullshownameswitch_scp dummy
