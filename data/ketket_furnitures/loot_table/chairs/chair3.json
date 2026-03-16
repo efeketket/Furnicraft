@@ -1,0 +1,46 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "Sofa",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                },
+                "entity": "this"
+              },     
+              {
+                     "function": "set_components",
+                     "components": {
+                         "minecraft:profile": {
+                             "id": [
+                              -2097361313,1024410766,-1135746352,-1925943514
+                             ],
+                             "properties": [
+                                 {
+                                     "name": "textures",
+                                     "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjNlZWI0NDA0YTIyZTNjNWZiZGQ0ODM2YzcyYTdmNTljMTYxNTU4OGE5YzU3ZDI4NzE1NTQ1MzcyOGFlYSJ9fX0="
+                                 }
+                             ]
+                         }
+                       }
+                 },
+              {
+                "function": "set_custom_data",
+                "tag": "{furniture:1b,chair3:1b,color:{white:1b}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,46 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": {
+                "text": "DarK Oak Park Bench",
+                "color": "yellow",
+                "bold": false,
+                "italic": false
+              },
+              "entity": "this"
+            },     
+            {
+                   "function": "set_components",
+                   "components": {
+                       "minecraft:profile": {
+                           "id": [
+                            547832730,-2007899507,1050463376,-1461207121
+                           ],
+                           "properties": [
+                               {
+                                   "name": "textures",
+                                   "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmE5NWRkMmVkYTAzY2E0OTE3OTZmNTM4ZDYyNTU3OWE4MjhiNzE4NDNmYjYwODY5YjEyYzkxZWNlMTUxNiJ9fX0="
+                               }
+                           ]
+                       }
+                     }
+               },
+            {
+              "function": "set_custom_data",
+              "tag": "{furniture:1b,chair5:1b,darkoak:1b}"
+          }
+          ]
+        }
+      ]
+    }
+  ]
+}

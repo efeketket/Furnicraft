@@ -1,0 +1,43 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": {
+                "text": "Cherry Wall Rack",
+                "color": "yellow",
+                "bold": false,
+                "italic": false
+              },
+              "entity": "this"
+            },     
+            {
+                   "function": "set_components",
+                   "components": {
+                       "minecraft:profile": {
+                           "properties": [
+                               {
+                                   "name": "textures",
+                                   "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU4NmEwNWYzMTMzYmZjOTUwZDdkOWQ0MWI2YjljNzY1ZjY5MGI5Y2E5OTgwNGRjNTVlZjIxNmFlOTJhODdlOCJ9fX0="
+                               }
+                           ]
+                       }
+                     }
+               },
+            {
+              "function": "set_custom_data",
+              "tag": "{furniture:1b,rack1:1b,cherry:1b}"
+          }
+          ]
+        }
+      ]
+    }
+  ]
+}

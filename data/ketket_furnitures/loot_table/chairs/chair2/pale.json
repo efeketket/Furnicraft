@@ -1,0 +1,46 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": {
+                "text": "Pale Chair",
+                "color": "yellow",
+                "bold": false,
+                "italic": false
+              },
+              "entity": "this"
+            },     
+            {
+                   "function": "set_components",
+                   "components": {
+                       "minecraft:profile": {
+                           "id": [
+                            1082840622,-1211871736,-1658820503,-193732122
+                           ],
+                           "properties": [
+                               {
+                                   "name": "textures",
+                                   "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2YyYmM4ZTlkOWIwNzk2NmY3Y2E3N2I2YWI4NmRjMTA1MmQzYzFjZGM4ZThkNWU2MTVlY2E2OTU0NTZjN2YzNCJ9fX0="
+                               }
+                           ]
+                       }
+                     }
+               },
+            {
+              "function": "set_custom_data",
+              "tag": "{furniture:1b,chair2:1b,pale:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

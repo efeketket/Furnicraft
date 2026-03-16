@@ -1,0 +1,46 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "Street Lamp Pole",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                },
+                "entity": "this"
+              },     
+              {
+                     "function": "set_components",
+                     "components": {
+                         "minecraft:profile": {
+                             "id": [
+                              -255831401,1649559496,-1584500068,-131676166
+                             ],
+                             "properties": [
+                                 {
+                                     "name": "textures",
+                                     "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjI1NTRkZGE4MGVhNjRiMThiYzM3NWI4MWNlMWVkMTkwN2ZjODFhZWE2YjFjZjNjNGY3YWQzMTQ0Mzg5ZjY0YyJ9fX0="
+                                 }
+                             ]
+                         }
+                       }
+                 },
+              {
+                "function": "set_custom_data",
+                "tag": "{furniture:1b,pole1:1b}"
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }

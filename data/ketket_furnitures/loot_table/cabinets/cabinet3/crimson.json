@@ -1,0 +1,46 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "Crimson Bedside Cabinet",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                },
+                "entity": "this"
+              },
+              {
+                "function": "set_components",
+                "components": {
+                    "minecraft:profile": {
+                        "id": [
+                          -1768587162,481117121,-1130447414,1370776151
+                        ],
+                        "properties": [
+                            {
+                                "name": "textures",
+                                "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmUwNTVmODYwYmNjOWE1NzYwZmI4NzY0NjNiNDIwOTJjNjQwMDFiYjlkNDI3YWJmZmQxYzdlMmYwZDQ2Mjc3OSJ9fX0="
+                            }
+                        ]
+                    }
+                  }
+            },
+              {
+                "function": "set_custom_data",
+                "tag": "{furniture:1b,cabinet3:1b,crimson:1b}"
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  } 

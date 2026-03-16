@@ -1,0 +1,43 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "Pale Throne Chair",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                },
+                "entity": "this"
+              },     
+              {
+                     "function": "set_components",
+                     "components": {
+                         "minecraft:profile": {
+                             "properties": [
+                                 {
+                                     "name": "textures",
+                                     "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRlMTcxYWMzYjcyZGIyNTc1OGM5N2RjYjYwMTdmYTJhMDA5OTk0ODM3NDQ2ZWI3ZjdkNGYwNzY3ZDEyNTM3ZiJ9fX0="
+                                 }
+                             ]
+                         }
+                       }
+                 },
+              {
+                "function": "set_custom_data",
+                "tag": "{furniture:1b,chair6:1b,pale:1b}"
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }

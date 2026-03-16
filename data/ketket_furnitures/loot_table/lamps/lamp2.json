@@ -1,0 +1,46 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "Table Lamp",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                },
+                "entity": "this"
+              },     
+              {
+                     "function": "set_components",
+                     "components": {
+                         "minecraft:profile": {
+                             "id": [
+                              896492242,-1311094100,-2145777384,-557283891
+                             ],
+                             "properties": [
+                                 {
+                                     "name": "textures",
+                                     "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTgzMmRiN2Q3YTg4ZmY2ODc0N2JjYjU1ZDcyZDNjMWZhY2QzZDM4OWMxNDRmNDI2NGJmZTg5OTMwNDhkMDA2ZiJ9fX0="
+                                 }
+                             ]
+                         }
+                       }
+                 },
+              {
+                "function": "set_custom_data",
+                "tag": "{furniture:1b,lamp2:1b}"
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }

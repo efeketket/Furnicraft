@@ -1,0 +1,46 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "Acacia Cabinet",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                },
+                "entity": "this"
+              },
+              {
+                "function": "set_components",
+                "components": {
+                    "minecraft:profile": {
+                        "id": [
+                          573135134,1474645653,-1334357495,1868118749
+                        ],
+                        "properties": [
+                            {
+                                "name": "textures",
+                                "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjUyZDUxNDhhMTA3MzAxYzkzZTMwM2UxZjUzYjI4NjM1YTMxOTIyNGE4MTNlZWRjMGE5OWNiYWZjMGRlYjVjMSJ9fX0="
+                            }
+                        ]
+                    }
+                  }
+            },
+              {
+                "function": "set_custom_data",
+                "tag": "{furniture:1b,cabinet2:1b,acacia:1b}"
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }

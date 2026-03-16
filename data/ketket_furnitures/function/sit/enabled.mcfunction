@@ -1,0 +1,2 @@
+execute as @s[tag=chair,tag=!full] if entity @e[distance=..2,limit=1,tag=!sitting,type=!#ketket_furnitures:cantsit,type=!#minecraft:arrows,sort=nearest] run function ketket_furnitures:sit/fullchecker
+execute as @s[tag=chair,tag=full] unless entity @e[tag=sitting,distance=..1] run tag @s remove full

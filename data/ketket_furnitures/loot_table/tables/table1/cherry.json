@@ -1,0 +1,46 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "Cherry Table",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                },
+                "entity": "this"
+              },     
+              {
+                     "function": "set_components",
+                     "components": {
+                         "minecraft:profile": {
+                             "id": [
+                              175805053,-305312628,-1386766733,-1986318517
+                             ],
+                             "properties": [
+                                 {
+                                     "name": "textures",
+                                     "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTg1ZTlmMzkxZjc4NDNhNWQzZGVjMjNmNTAwODk5ZGEwODAwZTg4Y2Q3NGJlOWEyZTFiMDQ5MDg5MzMwMjJlMiJ9fX0="
+                                 }
+                             ]
+                         }
+                       }
+                 },
+              {
+                "function": "set_custom_data",
+                "tag": "{furniture:1b,table1:1b,cherry:1b}"
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  } 

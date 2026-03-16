@@ -1,0 +1,46 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": {
+                "text": "Warped Park Bench",
+                "color": "yellow",
+                "bold": false,
+                "italic": false
+              },
+              "entity": "this"
+            },     
+            {
+                   "function": "set_components",
+                   "components": {
+                       "minecraft:profile": {
+                           "id": [
+                            1846806458,-854111289,-1074297289,1028931705
+                           ],
+                           "properties": [
+                               {
+                                   "name": "textures",
+                                   "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzYzZTE4N2E4MmRiMzA2NWE2YmNiYWMwZGY5ZDkwNDc0NzFkNDhkOGYyMjUwYTA1NDFiMTUwMjYyNTM3ZGU1YiJ9fX0="
+                               }
+                           ]
+                       }
+                     }
+               },
+            {
+              "function": "set_custom_data",
+              "tag": "{furniture:1b,chair5:1b,warped:1b}"
+          }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": {
+                "text": "Cherry Armchair",
+                "color": "yellow",
+                "bold": false,
+                "italic": false
+              },
+              "entity": "this"
+            },     
+            {
+                   "function": "set_components",
+                   "components": {
+                       "minecraft:profile": {
+                           "id": [
+                            -1214359766,306859207,-1906062151,-201328285
+                           ],
+                           "properties": [
+                               {
+                                   "name": "textures",
+                                   "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWVhNzIwNTk2ZDhjODJlMDM0YzFkMjVmNDBmNjhjZTE4MTFiYWVlNjcxN2IyMWQ2MDA5NzY1ZmIyYmE1ZTlmZCJ9fX0="
+                               }
+                           ]
+                       }
+                     }
+               },
+            {
+              "function": "set_custom_data",
+              "tag": "{furniture:1b,chair4:1b,cherry:1b,color:{white:1b}}"
+          }
+          ]
+        }
+      ]
+    }
+  ]
+}

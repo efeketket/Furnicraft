@@ -1,0 +1,7 @@
+{
+    "pack": {
+		"min_format": [88,0],
+		"max_format": [94,1],
+        "description": "§6§lKetket's§e FurniCraft§r\n§7Only work with +1.21"
+    }
+}

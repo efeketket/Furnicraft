@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_axe"
+    },
+    "title": "Local Carpenter",
+    "description": "Craft Carpenter Bench.",
+    "background": "minecraft:textures/block/birch_planks.png",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ketket_furnitures:adv_main",
+  "criteria": {
+    "craft_carpenter_bench": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+          "recipe_id": "ketket_furnitures:carpenter_bench"
+        }
+      }
+    }
+}

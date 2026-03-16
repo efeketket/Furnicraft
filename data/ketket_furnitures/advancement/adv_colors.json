@@ -1,0 +1,18 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:red_dye"
+      },
+      "title": "Splash of Colors",
+      "description": "Dye wool of the furniture.",
+      "background": "minecraft:textures/block/birch_planks.png",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "ketket_furnitures:adv_carpenter",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

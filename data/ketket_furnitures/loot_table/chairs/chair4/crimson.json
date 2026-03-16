@@ -1,0 +1,46 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": {
+                "text": "Crimson Armchair",
+                "color": "yellow",
+                "bold": false,
+                "italic": false
+              },
+              "entity": "this"
+            },     
+            {
+                   "function": "set_components",
+                   "components": {
+                       "minecraft:profile": {
+                           "id": [
+                            -836485262,852707521,-1308409806,186692215
+                           ],
+                           "properties": [
+                               {
+                                   "name": "textures",
+                                   "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTJjZDY5YTNlNDI1NjRjMGRhNGMyMjk3OTQzYmUyM2FhOWNlMWM3NTZkOGJhOWU2ZWVkZDhmNTIzMjE4ZmRlNCJ9fX0="
+                               }
+                           ]
+                       }
+                     }
+               },
+            {
+              "function": "set_custom_data",
+              "tag": "{furniture:1b,chair4:1b,crimson:1b,color:{white:1b}}"
+          }
+          ]
+        }
+      ]
+    }
+  ]
+}

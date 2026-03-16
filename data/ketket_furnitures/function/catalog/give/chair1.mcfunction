@@ -1,0 +1,1 @@
+$loot give @s loot ketket_furnitures:chairs/chair1/$(type)
